@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portal for assignment for WDD 230 for easy access and review.">
-    
     <link href="assets/css/styles.css" rel="stylesheet">
     <title>WDD 230: Assignment Portal</title>
   </head>
-
   <body>
     <header>
-      <h1>Matthew J. Felton</h1>
+      <img id="matthew" src="assets/images/myself.jpg" alt="Photo of Myself (Matthew J. Felton)">
+      <h1 id="pheader">Matthew J. Felton</h1>
     </header>
     <main>
-      <h1>WDD 230: Assignment Portal</h1>
-      <img id="matthew" src="assets/images/myself.jpg" alt="Photo of Myself">
-      <ul>
-        <li>Lesson 02: <a href="#">Assignment Link</a></li>
-        <li>Lesson 03: <a href="#">Assignment Link</a></li>
-        <li>Lesson 04: <a href="#">Link</a> | <a href="#">Link</a></li>
-      </ul>
+      <h2 id="subheader">WDD 230: Assignment Portal</h1>
+        <hr>
+      
+      <nav >
+        <ul>
+          <li>Lesson 02: <a class="assignments" href="#">Assignment Link</a></li>
+          <li>Lesson 03: <a class="assignments" href="#">Assignment Link</a></li>
+          <li>Lesson 04: <a class="assignments" href="#">Link</a> | <a class="assignments" href="#">Link</a></li>
+        </ul>
+      </nav>
     </main>
     <footer>
-      <p>&copy; <span id="getYear"></span> | Matthew J. Felton | Alabama | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-      <br/><span id="modified"></span>
+      <p>&copy; <span id="getYear"></span> | Matthew J. Felton | Alabama | <a id="slink"href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+      <span id="modified"></span>
     </footer>
+    <!--script for current date and year-->
     <script type="text/javascript" src="assets/js/date.js"></script>
+    <!--script for last updated-->
     <script type="text/javascript" src="assets/js/lastupdated.js"></script>
     
   </body>
