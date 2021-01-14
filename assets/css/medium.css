@@ -1,0 +1,19 @@
+@media only screen and (min-width: 32.5em) {
+    #matthew {
+        float: right;
+        box-shadow: 4px 8px 20px rgba(0,0,0,1);
+        border-radius: 15px;
+        margin-right: 55px;
+        margin-top: 40px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2
+    {
+        font-size: 1.5rem;
+    }
+    header, footer {
+        border-radius: 15px;
+    }
+}

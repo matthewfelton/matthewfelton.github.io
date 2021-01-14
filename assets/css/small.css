@@ -1,24 +1,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cinzel&family=Frank+Ruhl+Libre&family=Merriweather&family=Permanent+Marker&display=swap');
 
-@media (min-width: 800px) {
-    nav {
-        padding: .5em;
-    }
-    main h2 {
-        padding-top: .5em;
-    }
-    body {
-        width: 800px;
-        margin: 0 auto;
-        background-color: #f5e2c8;
-        color:#3b1f5b;
-    } 
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0.15rem;
 }
-#pheader {
+h2 {
+    font-size: 1rem;
+    border-bottom: 1px solid #3b1f5b;
+    margin-bottom: 0.5rem;
+}
+nav {
+    padding: .5em;
+}
+main h2 {
+    padding-top: .5em;
+}
+body {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #f5e2c8;
+    color:#3b1f5b;
+}
+header {
     background-color:#3b1f5b;
     color:#f5e2c8;
-    border-radius: 15px;
     padding: 1.2em;
     text-align: center;
     display: block;
@@ -47,21 +54,14 @@ nav ul li {
 #matthew {
     height: 210px;
     width: auto;
-    box-shadow: 4px 8px 20px rgba(0,0,0,1);
-    float: right;
-    border-radius: 15px;
-    margin-right: 55px;
-    margin-top: 40px;
 }
 
 footer {
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-align: center;
     background-color: #3b1f5b;
     padding: .8em;
-    border-radius: 15px;
     color: #f5e2c8;
-    vertical-align: middle;
 }
 #slink:visited {
     color:#f5e2c8;
@@ -73,7 +73,7 @@ footer {
     color:aquamarine;
 }
 #modified {
-    font-size: 0.7em;
+    font-size: 0.8em;
     text-align: center;
     color: #f861b2;
     vertical-align: middle;
