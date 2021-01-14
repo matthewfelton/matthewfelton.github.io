@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Architects+Daughter|Cinzel|Frank+Ruhl+Libre");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cinzel&family=Frank+Ruhl+Libre&family=Merriweather&family=Permanent+Marker&display=swap');
 
 @media (min-width: 800px) {
     nav {
@@ -42,6 +42,7 @@ nav ul li {
 }
 .assignments {
     color: blue;
+    font-family: 'Merriweather', serif;
 }
 #matthew {
     height: 210px;
