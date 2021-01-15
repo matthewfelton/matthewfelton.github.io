@@ -1,0 +1,22 @@
+@media only screen and (min-width: 500px) {
+
+nav li {
+    float: left;
+    width: 25%;
+}
+
+main figure {
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+}
+
+div.news {
+    /* stay below any floated image */ 
+    clear: both;
+    column-count: 2;
+    column-rule: 1px solid #ddd;
+}
+
+
+} /* end of media query */
