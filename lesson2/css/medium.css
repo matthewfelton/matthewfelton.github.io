@@ -1,6 +1,6 @@
 @media only screen and (min-width: 700px) {
 
-    #main-grid {
+    .main-grid {
         grid-template-columns: 1fr 1fr;
     }
     .items {
