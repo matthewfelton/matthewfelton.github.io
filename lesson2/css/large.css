@@ -1,0 +1,10 @@
+@media only screen and (min-width: 1024px) {
+
+    #main-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .items {
+        max-width: 1068px;
+        margin: 0 auto;
+    }
+    } /* end of media query */
