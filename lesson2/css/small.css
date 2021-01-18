@@ -40,7 +40,7 @@ header h2 {
 .main-grid {
     display: grid;
     grid-template-columns: 1fr;
-    column-span: 1;
+    column-span: none;
     margin: 0 auto;
 }
 .item {
