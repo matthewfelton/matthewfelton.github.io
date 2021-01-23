@@ -7,24 +7,12 @@
     .example_logo {
         margin: 0;
     }
-    nav {
-        max-width: 67rem;
-        margin: auto;
-    }
     .example_1 {
         visibility: hidden;
     }
-    .example_2 {
-        visibility: hidden;
-    }
-    .example_3 {
-        visibility: hidden;
-    }
-    .example_4 {
-        visibility: hidden;
-    }
-    .example_5 {
-        visibility: hidden;
+    nav {
+        max-width: 67rem;
+        margin: auto;
     }
     main h1, h2, h3, p {
         text-align: justify;
