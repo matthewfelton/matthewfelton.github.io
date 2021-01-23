@@ -41,14 +41,14 @@ nav ul {
     padding: 0;
 }
 nav a{
-    color:#ffbf1f;
+    color:#fb8500;
     display: block;
     padding: 0.60rem;
     text-decoration: none;
 }
 nav a:hover {
     background-color: #219ebc;
-    color: #fb8500;
+    color: #ffbf1f;
 }
 .active {
     color: #023047;
