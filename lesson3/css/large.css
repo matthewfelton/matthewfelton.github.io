@@ -1,0 +1,30 @@
+@media only screen and (min-width: 1024px) {
+
+    header, main, footer {
+        max-width: 64rem;
+        margin: auto;
+    }
+    nav {
+        max-width: 67rem;
+        margin: auto;
+    }
+    .example_1 {
+        visibility: hidden;
+    }
+    .example_2 {
+        visibility: hidden;
+    }
+    .example_3 {
+        visibility: hidden;
+    }
+    .example_4 {
+        visibility: hidden;
+    }
+    .example_5 {
+        visibility: hidden;
+    }
+    main h1, h2, h3, p {
+        text-align: justify;
+        margin: 2%;
+    }
+}
