@@ -47,7 +47,7 @@ nav a{
     text-decoration: none;
 }
 nav a:hover {
-    background-color: #8ecae6;
+    background-color: #219ebc;
     color: #fb8500;
 }
 .active {
@@ -93,7 +93,7 @@ main h1, h2, h3, p {
 footer p {
     text-align: center;
     font-size: 0.8em;
-    color: #219ebc;
+    color: #8ecae6;
 }
 #modified {
     color: #ffbf1f;

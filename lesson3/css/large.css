@@ -4,6 +4,9 @@
         max-width: 64rem;
         margin: auto;
     }
+    .example_logo {
+        margin: 0;
+    }
     nav {
         max-width: 67rem;
         margin: auto;
