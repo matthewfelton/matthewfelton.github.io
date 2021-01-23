@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1024px) {
 
     header, main, footer {
-        max-width: 64rem;
+        max-width: 1024px;
         margin: auto;
     }
     .example_logo {
@@ -11,7 +11,7 @@
         visibility: hidden;
     }
     nav {
-        max-width: 67rem;
+        max-width: 1070px;
         margin: auto;
     }
     main h1, h2, h3, p {

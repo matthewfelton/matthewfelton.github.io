@@ -31,7 +31,7 @@ header h2 {
 
 /* nav rules here */
 nav {
-    background-color: #8ecae6;
+    background-color: #219ebc;
     text-align: center;
 }
 nav ul {
@@ -41,17 +41,18 @@ nav ul {
     padding: 0;
 }
 nav a{
-    color:#fb8500;
+    color:#023047;
     display: block;
     padding: 0.60rem;
     text-decoration: none;
 }
 nav a:hover {
-    background-color: #219ebc;
+    background-color: #023047;
     color: #ffbf1f;
 }
 .active {
-    color: #023047;
+    color: #219ebc;
+    background-color: #023047;
 }
 
 /* main rules here */
