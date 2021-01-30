@@ -9,11 +9,24 @@ h1, h2, h3 {
 p {
     font-family: 'Merriweather', serif;
 }
+.maxSize {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
 /* header rules here */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 header img {
-    float: left;
+    width: 70px;
     margin-right: 10px;
-    width: 50px;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
 }
 header h1 {
     margin: 0; 
@@ -24,26 +37,35 @@ header h1 {
 header h2 {
     margin: 0; 
     font-weight: normal; 
-    font-size: 1rem;
+    font-size: .9rem;
     color: #219ebc;
     text-align: left;
 }
-
+header button {
+    background-color: #023047;
+    border: none;
+    font-size: 1.6rem;
+    color: #219ebc;
+    display: block;
+    margin: 0;
+    margin-left: 4%;
+    font-size: 2rem;
+    
+}
 /* nav rules here */
 nav {
     background-color: #8ecae6;
-    text-align: center;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
-    overflow: hidden;
     padding: 0;
+    text-align: center;
 }
 nav a {
     color:#023047;
     display: block;
-    padding: 0.60rem;
+    padding: 0.6rem 0;
     text-decoration: none;
 }
 nav a:hover {
@@ -54,32 +76,29 @@ nav a:hover {
     color: #ffbf1f;
     background-color: #023047;
 }
-
+.disabled {
+    display: none;
+}
 /* main rules here */
-.example_logo {
-    width: 200px;
-    display: block;
-    margin: auto;
-    padding-bottom: 10px;
-}
-.example_color {
-    width: 100%;
-}
-.example_1 {
-    color: #023047;
+.placeholder {
+    border: 2px dashed #000;
+    background-color: #ccc;
+    padding: 10px;
+    margin-bottom: 2%
 }
 main h1, h2, h3, p {
-    text-align: center;
     color: #023047;
 }
-
 /* footer rules here */
+
 footer p {
     text-align: center;
     font-size: 0.8em;
     color: #8ecae6;
 }
-#modified {
-    color: #ffbf1f;
-    vertical-align: middle;
-}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

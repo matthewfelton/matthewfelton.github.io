@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Preston: Enlightened Day</title>
+    <meta name="description" content="preston page for weather site">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="logo for enlightened day">
+        <section class="headings">
+            <h1>Enlightened Day</h1>
+            <h2>There's always a Bright Side</h2>
+        </section>
+        <button id="primaryOpen" class="" onclick="toggleMenu()">&#9776;</button>
+        <button id="primaryClose" class="disabled" onclick="toggleMenu()">X</button>
+    </header>
+    <nav class="maxSize clearfix">
+        <ul id="primaryNav" class="nav disabled">
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="maxSize">
+        <h2> Preston Idaho</h2>
+        <div class="placeholder">Coming Soon: hero image and weather summary</div>
+        <div class="placeholder">Coming Soon: 5 day forecast</div>
+        <div class="placeholder">Coming Soon: article</div>
+        <div class="placeholder">Coming Soon: contact information</div>
+    </main>
+    <footer class="maxSize"><p>&copy; <span id="getYear"></span> | Matthew J. Felton | <span id="currentYear"></span> </p></footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
