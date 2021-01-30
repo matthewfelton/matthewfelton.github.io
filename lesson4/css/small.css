@@ -54,6 +54,7 @@ header button {
 /* nav rules here */
 nav {
     background-color: #8ecae6;
+    margin: 0;
 }
 nav ul {
     list-style-type: none;
