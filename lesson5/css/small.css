@@ -171,18 +171,18 @@ main h1, h2, h3, p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2%;
-    grid-gap: 1rem;
+    gap: 20px;
 }
 .address {
     grid-column: 1/2;
     font-size: .8em;
-    text-align: center;
-    width: 126px;
+    text-align: left;
+    width: 140px;
 }
 .method {
     grid-column: 2/3;
     font-size: .8em;
-    text-align: center;
+    text-align: left;
 }
 .googlemap {
     grid-column: 1/3;

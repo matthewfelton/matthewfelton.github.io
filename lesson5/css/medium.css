@@ -72,12 +72,10 @@
     }
     .address {
         font-size: 1em;
-        text-align: left;
         width: 200px;
     }
     .method {
         font-size: 1em;
-        text-align: left;
     }
     .googlemap {
         grid-column: 3/5;
