@@ -152,6 +152,7 @@ nav button {
     width: 100px;
     height: 175px;
     text-align: center;
+    background-color: #8ecae6;
 }
 .forecast {
     display: none;
