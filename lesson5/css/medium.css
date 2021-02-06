@@ -66,6 +66,22 @@
     .googlemap {
         grid-column: 3/5;
     }
+    .article_img {
+        float: right;
+        width: auto;
+    }
+    .top {
+        display: block;
+        width: auto;
+        float: right;
+    }
+    .bottom {
+        display: none;
+    }
+
+
+
+
     .maxSize {
         max-width: 44rem;
     }
