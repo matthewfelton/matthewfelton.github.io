@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Preston: Enlightened Day</title>
+    <meta name="description" content="preston page for weather site">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <div class="announcement"></div>
+        <div class="full_header flex clearfix">
+            <section class="logo">
+                <img src="images/logo.svg" alt="logo for enlightened day">
+            </section>
+            <section class="headings">
+                <h1>Enlightened Day</h1>
+                <h2>There's always a Bright Side</h2>
+            </section>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button id="primaryOpen" class="" onclick="toggleMenu()">&#9776; Menu</button>
+        <button id="primaryClose" class="disabled" onclick="toggleMenu()">X Menu</button>
+        <div class="maxSize">
+            <ul id="primaryNav" class="nav disabled">
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="maxSize">
+        <h1> Preston Idaho</h1>
+        <div class="hero_summary">
+            <img class="hero_img" src="images/hero.jpeg" alt="view of a town">
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <div class="label">
+                    <p>Currently:</p>
+                    <p>High:</p>
+                    <p>Low:</p>
+                    <p>Wind:</p>
+                </div>
+                <div class="label_data">
+                    <p>Sunny</p>
+                    <p>52&#176</p>
+                    <p>32&#176</p>
+                    <p>1 km/h</p>
+                </div>
+            </section>
+        </div>
+        <div class="placeholder">Coming Soon: 5 day forecast</div>
+        <div class="placeholder">Coming Soon: article</div>
+        <div class="contact_us">
+            <h2>Contact Us</h2>
+            <div class="contact_whole">
+                <section class="address">
+                    <h3>Address:</h3>
+                    <p>The Weather Center<br>
+                    123 Main Street.<br>
+                    Franklin, MI 87654</p>
+                </section>
+                <section class="method">
+                    <h3>Phone:</h3>
+                    <p>(801)555-1234</p>
+                    <h3>Email:</h3>
+                    <p>contact@yoururl.com</p>
+                </section>
+                <a href="https://www.google.com/maps/place/Preston,+ID+83263/@42.0998053,-111.9153444,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173">
+                    <img class="googlemap" src="images/googlemap.PNG" alt="map of Preston">
+                </a>
+            </div>  
+        </div>
+    </main>
+    <footer><p>&copy; <span id="getYear"></span> | Matthew J. Felton | <span id="currentYear"></span> </p></footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
