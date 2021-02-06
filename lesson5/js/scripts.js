@@ -37,3 +37,18 @@ let fulldate = dayName + ", " + monthName + " " + d.getDate() + " " + year;
 document.getElementById("getYear").textContent = year;
 document.getElementById("currentYear").textContent = fulldate;
 
+
+//const today = new Date();
+//const dayNumber = today.getDay();
+//const promo = document.getElementById("popup")
+//if (dayNumber == 5) {
+//    element.classList.add("showme");
+//} else {
+//    element.classList.add("hideme");
+//}
+let dayofweek = d.getDay();
+if (dayofweek == 5) {
+    document.getElementById("popup").classList.toggle("showme");
+} else {
+    document.getElementById("popup").classList.toggle("hideme");
+}

@@ -23,7 +23,13 @@ p {
     margin: 0 auto;
 }
 /* header rules here */
-.promotion {
+div.showme {
+    display: block;
+}
+div.hideme{
+    display: none;
+}
+div#popup {
     background-color: #ffbf1f;
     color: #023047;
     text-align: center;
