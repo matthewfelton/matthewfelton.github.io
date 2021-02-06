@@ -23,6 +23,9 @@
         top: 60px;
         left: 90px;
     }
+    .w_forecast {
+        gap: 60px;
+    }
     .maxSize {
         max-width: 64rem;
     }

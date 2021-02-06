@@ -1,5 +1,5 @@
 @media only screen and (min-width: 600px) {
-
+    
     .promotion {
         font-size: 1.5em;
     }
@@ -50,7 +50,14 @@
     }
     .w_forecast {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 110px 110px 110px 110px 110px;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+    }
+
+    .w_box h3, p {
+        padding-left: 0px;
     }
     .contact_us h2 {
         margin: 0;
