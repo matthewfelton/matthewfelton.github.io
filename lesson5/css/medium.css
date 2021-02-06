@@ -48,6 +48,9 @@
     .forecast {
         display: block;
     }
+    .forecast h2{
+        margin-bottom: 40px;
+    }
     .w_forecast {
         display: grid;
         grid-template-columns: 110px 110px 110px 110px 110px;
@@ -55,7 +58,6 @@
         align-content: center;
         gap: 10px;
     }
-
     .w_box h3, p {
         padding-left: 0px;
     }
@@ -84,18 +86,22 @@
         float: right;
         width: auto;
     }
+    .article h2 {
+        margin-top: 50px;;
+    }
+    .article p {
+        margin-bottom: 50px;;
+    }
     .top {
         display: block;
         width: auto;
         float: right;
+        padding-left: 10px;
+        padding-bottom: 10px;
     }
     .bottom {
         display: none;
     }
-
-
-
-
     .maxSize {
         max-width: 44rem;
     }
