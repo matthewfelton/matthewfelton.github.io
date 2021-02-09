@@ -78,6 +78,7 @@
         font-size: 1em;
     }
     .googlemap {
+        display: block;
         grid-column: 3/5;
     }
     .article_img {
