@@ -1,0 +1,33 @@
+@media only screen and (min-width: 1024px) {
+    
+    header img {
+        width: 100px;
+    }
+    header h1 {
+        font-size:2.5rem;
+    }
+    header h2 {
+        font-size:1.5rem;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 64rem 1fr;
+    }
+    .full_header {
+        grid-column: 2/3;
+    }
+    nav ul li {
+        font-size: 1.5rem;
+    }
+    .summary {
+        top: 60px;
+        left: 90px;
+    }
+    .w_forecast {
+        gap: 60px;
+    }
+    .maxSize {
+        max-width: 64rem;
+    }
+
+}

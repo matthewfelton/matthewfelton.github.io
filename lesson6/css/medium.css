@@ -1,0 +1,107 @@
+@media only screen and (min-width: 600px) {
+    
+    .promotion {
+        font-size: 1.5em;
+    }
+    nav button {
+        display: none;
+    }
+    header img {
+        width: 85px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header h2 {
+        font-size: 1.2rem;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 44rem 1fr;
+    }
+    .full_header {
+        grid-column: 2/3;
+    }
+    .nav {
+        display: flex;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li {
+        width: 25%;
+        flex: 1 1 100%;
+        font-size: .9rem;
+        border-right: 1px solid #023047;
+    }
+    .summary {
+        top: 40px;
+        left: 60px;
+    }
+    .label {
+        line-height: .7;
+    }
+    .label_data {
+        line-height: .7;
+    }
+    .forecast {
+        display: block;
+    }
+    .forecast h2{
+        margin-bottom: 40px;
+    }
+    .w_forecast {
+        display: grid;
+        grid-template-columns: 110px 110px 110px 110px 110px;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+    }
+    .w_box h3, p {
+        padding-left: 0px;
+    }
+    .contact_us h2 {
+        margin: 0;
+        margin-top: 10px;
+    }
+    .contact_whole {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 2%;
+    }
+    .address {
+        font-size: 1em;
+        width: 200px;
+    }
+    .method {
+        font-size: 1em;
+    }
+    .googlemap {
+        display: block;
+        grid-column: 3/5;
+    }
+    .article_img {
+        float: right;
+        width: auto;
+    }
+    .article h2 {
+        margin-top: 50px;;
+    }
+    .article p {
+        margin-bottom: 50px;;
+    }
+    .top {
+        display: block;
+        width: auto;
+        float: right;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .bottom {
+        display: none;
+    }
+    .maxSize {
+        max-width: 44rem;
+    }
+}
