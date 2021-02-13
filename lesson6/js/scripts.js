@@ -52,3 +52,9 @@ if (dayofweek == 5) {
 } else {
     document.getElementById("popup").classList.toggle("hideme");
 }
+
+wWebFont.load({
+    google: {
+        famlies: ["Patua One", "Merriweather"]
+    }
+});

@@ -128,8 +128,8 @@ main h1, h2, h3, p {
     background-color:#8ecae6;
     margin: 8px auto;
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: -8px;
+    left: 30px;
     opacity: 0.9;
 }
 .summary h3 {

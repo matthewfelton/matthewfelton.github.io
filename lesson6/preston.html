@@ -52,15 +52,17 @@
                 <h3>Weather Summary</h3>
                 <div class="label">
                     <p>Currently:</p>
-                    <p>High:</p>
-                    <p>Low:</p>
-                    <p>Wind:</p>
+                    <p>Current:</p>
+                    <p>Wind Chill</p>
+                    <p>Humidity:</p>
+                    <p>Wind Speed:</p>
                 </div>
                 <div class="label_data">
-                    <p>Sunny</p>
-                    <p>52&#176;</p>
-                    <p>32&#176;</p>
-                    <p>1 km/h</p>
+                    <p>Cloudy</p>
+                    <p><span id="temp">37</span>&#176;</p>
+                    <p><span id="windChill"></span></p>
+                    <p>30%</p>
+                    <p><span id="windSpeed">7</span> mph</p>
                 </div>
             </section>
         </div>
@@ -132,6 +134,8 @@
         </div>
     </main>
     <footer><p>&copy; <span id="getYear"></span> | Matthew J. Felton | <span id="currentYear"></span> </p></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
