@@ -112,9 +112,13 @@ main h1, h2, h3, p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     height: auto;
     margin: 10px auto;
+    max-width: 56rem
+}
+.hero_img img {
+    display: block;
+    width: 100%;
 }
 .summary {
     display: grid;
@@ -124,8 +128,8 @@ main h1, h2, h3, p {
     background-color:#8ecae6;
     margin: 8px auto;
     position: absolute;
-    top: 20px;
-    left: 30px;
+    top: 10px;
+    left: 20px;
     opacity: 0.9;
 }
 .summary h3 {

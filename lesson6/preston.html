@@ -42,7 +42,12 @@
     <main class="maxSize">
         <h1> Preston Idaho</h1>
         <div class="hero_summary">
-            <img class="hero_img" src="images/hero.jpeg" alt="view of a town">
+            <picture class="hero_img">
+                <source media="(max-width: 500px)" srcset="images/Orignal500x204.jpg">
+                <source media="(max-width: 1024px)" srcset="images/Orignal704x287.jpg">
+                <img src="images/Orignal1024x417.jpg" alt="sizes of hero images"> 
+            </picture>
+            <!-- <img class="hero_img" src="images/hero.jpeg" alt="view of a town"> -->
             <section class="summary">
                 <h3>Weather Summary</h3>
                 <div class="label">
