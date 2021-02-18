@@ -1,0 +1,17 @@
+main {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 300px;
+}
+
+article img {
+    filter: blur(0em);
+    transition: filter 2s;
+    border: solid #000;
+    padding: 2px;
+}
+
+article img[data-src] {
+    filter: blur(0.2em);
+}

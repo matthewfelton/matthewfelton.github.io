@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Lazy Load</title>
+<meta name="description" content="Learning how to do lazyload">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+</head>
+<body>
+<header></header>
+<nav></nav>
+<h1>Progressive loading</h1>
+<main>
+    <picture>
+        <img src="images/placeholder.png"
+         data-src="http://placekitten.com/300/400" 
+         alt="kitten">
+    </picture>
+    <picture>
+        <img src="images/placeholder.png" 
+        data-src="https://www.placecage.com/c/300/400" 
+        alt="crazy nick cage">
+    </picture>
+    <picture></picture>
+        <img src="images/placeholder.png" 
+        data-src="https://www.placecage.com/300/400" 
+        alt="nick cage">
+    </picture>
+    <picture>
+        <img src="images/placeholder.png" 
+        data-src="https://picsum.photos/300/400" 
+        alt="random">
+    </picture>
+    <picture>
+        <img src="images/placeholder.png" 
+        data-src="http://placebeard.it/300x400" 
+        alt="beard">
+    </picture>
+</main>
+<footer></footer>
+<script src="js/imagehandling.js"></script>
+</body>
+</html>
