@@ -29,22 +29,5 @@
     .maxSize {
         max-width: 64rem;
     }
-    /*Gallery only*/
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .gallery figure {
-        border-radius: 7px;
-    }
-    .gallery img {
-        border-radius: 7px;
-    }
-    .gallery figure:hover {
-        box-shadow: 0 0 75px #000;
-    }
-
-
-
 
 }
-

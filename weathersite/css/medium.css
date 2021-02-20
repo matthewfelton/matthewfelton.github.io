@@ -105,8 +105,4 @@
     .maxSize {
         max-width: 44rem;
     }
-    /*Gallery only*/
-    .gallery {
-    grid-template-columns: 1fr 1fr;
-    }
 }
