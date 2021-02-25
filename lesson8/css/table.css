@@ -39,7 +39,7 @@ th, tr:nth-child(4) :last-child{
 }
 
 tbody tr th {
-    font-style: 1em;
+    font-size: 1em;
 }
 tbody tr:nth-child(5) :first-child {
     font-style: italic;
