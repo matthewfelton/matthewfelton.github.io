@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Weather Gallery: Enlightened Day</title>
+    <meta name="description" content="gallery page for weather site">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div id="popup"> Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <div class="full_header flex clearfix">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo for enlightened day">
+            </div>
+            <div class="headings">
+                <h1>Enlightened Day</h1>
+                <h2>There's always a Bright Side</h2>
+            </div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button id="primaryOpen" class="" onclick="toggleMenu()">&#9776; Menu</button>
+        <button id="primaryClose" class="disabled" onclick="toggleMenu()">X Menu</button>
+        <div class="maxSize">
+            <ul id="primaryNav" class="nav disabled">
+                <li><a href="#">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a class="active" href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="maxSize">
+        <h1>Weather Gallery</h1>
+        <div class="gallery">
+                <figure>
+                    <img src="images/placeholder300x250.png" data-src="images/gallery1-300x250.jpg" alt="pink sunrise with tree">
+                    <figcaption>
+                        <p>Pink Sunrise</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder300x250.png" data-src="images/gallery2-300x250.jpg" alt="lighting striking water">
+                    <figcaption>
+                        <p>Lighting</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder300x250.png" data-src="images/gallery3-300x250.jpg" alt="snow covered field">
+                    <figcaption>
+                        <p>Snow filled Field</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder300x250.png" data-src="images/gallery4-300x250.jpg" alt="hurriance from space">
+                    <figcaption>
+                        <p>Hurricane Space view</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder300x250.png" data-src="images/gallery5-300x250.jpg" alt="tornado touching ground">
+                    <figcaption>
+                        <p>Tornado with lighting</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder300x250.png" data-src="images/gallery6-300x250.jpg" alt="two rainbows in the sky">
+                    <figcaption>
+                        <p>Double Rainbow</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder300x250.png" data-src="images/gallery7-300x250.jpg" alt="wind blowing on a tree">
+                    <figcaption>
+                        <p>Wind Storm</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder300x250.png" data-src="images/gallery8-300x250.jpg" alt="cloudly sky with a house">
+                    <figcaption>
+                        <p>Cloudly Skys</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder300x250.png" data-src="images/gallery9-300x250.jpg" alt="rain droplets on a car window">
+                    <figcaption>
+                        <p>Gentle Rain</p>
+                    </figcaption>
+                </figure>
+        </div>
+        
+        <div class="contact_us">
+            <h2>Contact Us</h2>
+            <div class="contact_whole">
+                <section class="address">
+                    <h3>Address:</h3>
+                    <p>The Weather Center<br>s
+                    123 Main Street.<br>
+                    Franklin, MI 87654</p>
+                </section>
+                <section class="method">
+                    <h3>Phone:</h3>
+                    <p>(801)555-1234</p>
+                    <h3>Email:</h3>
+                    <p>contact@yoururl.com</p>
+                </section>
+            </div>  
+        </div>
+    </main>
+    <footer><p>&copy; <span id="getYear"></span> | Matthew J. Felton | <span id="currentYear"></span> </p></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/imagehandling.js"></script>
+</body>
+</html>

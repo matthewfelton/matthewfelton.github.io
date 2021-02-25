@@ -225,3 +225,28 @@ footer p {
     display: table;
     clear: both;
   }
+
+/*Gallery only*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.gallery figure {
+
+}
+
+.gallery figure img {
+    display: block;
+    filter: blur(0em);
+    transition: filter 2s;
+    width: 100%;
+    margin: 0;
+}
+
+.gallery figure img[data-src] {
+    filter: blur(0.2em);
+}
+
