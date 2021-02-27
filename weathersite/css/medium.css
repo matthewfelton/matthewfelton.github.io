@@ -109,4 +109,17 @@
     .gallery {
     grid-template-columns: 1fr 1fr;
     }
+
+    form fieldset {
+        max-width: 30rem;;
+    }
+    form label.ftop input, form label.ftop select {
+        max-width: 28rem;
+    }
+    form textarea {
+        max-width: 28rem;
+    }
+    [type="range"] {
+       max-width: 28rem;
+    }
 }

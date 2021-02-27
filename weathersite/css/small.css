@@ -259,10 +259,12 @@ form label.ftop input:required:valid {
 }
 form fieldset {
     margin: 2rem 0;
+    margin-left: 10px;
     border: 1px solid #023047;
     background-color: #8ecae6;
     border-radius: 10px;
     padding: .5rem 2%;
+    max-width: 21rem;
 }
 form legend {
     color: #8ecae6;
@@ -288,7 +290,7 @@ form label.ftop input, form label.ftop select {
     padding: .75rem;
     color: #023047;
     width: 100%;
-    max-width: 20rem;
+    max-width: 19rem;
     
 }
 form label.sbs {
@@ -302,6 +304,7 @@ form textarea {
     height: 250px;
     display: block;
     border: solid 1px #023047;
+    max-width: 19rem;
 }
 form input.submitBtn {
     border: none;
