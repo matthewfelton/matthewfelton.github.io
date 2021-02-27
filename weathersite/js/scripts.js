@@ -58,3 +58,7 @@ WebFont.load({
         families: ["Patua One", "Merriweather"]
     }
 });
+
+function changeSeverity(val) {
+    document.getElementById('stormseverity').innerHTML = val; 
+  }

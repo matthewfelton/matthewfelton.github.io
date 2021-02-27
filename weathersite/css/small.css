@@ -249,4 +249,74 @@ footer p {
 .gallery figure img[data-src] {
     filter: blur(0.2em);
 }
+/*-------stormcenter------*/
 
+form label.ftop input:required {
+    border-left: #ffbf1f solid 6px;
+}
+form label.ftop input:required:valid {
+    border-left: #023047 solid 6px;
+}
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #023047;
+    background-color: #8ecae6;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: #8ecae6;
+    background-color: #023047;
+    border-radius: 7px;
+    margin: 0 1rem;
+    padding: 5px 20px 5px 20px;;
+    font-size: 1.7em;
+}
+form label.ftop, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #023047;
+    font-weight: 600;
+    font-size: 1rem;
+}
+form label.ftop input, form label.ftop select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #023047;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #023047;
+    width: 100%;
+    max-width: 20rem;
+    
+}
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    font-weight: 600;
+    color: #023047;
+}
+form textarea {
+    width:  90%;
+    height: 250px;
+    display: block;
+    border: solid 1px #023047;
+}
+form input.submitBtn {
+    border: none;
+    border-radius: 5px;;
+    background-color: #023047;
+    color: #8ecae6;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 100%;
+    max-width: 25rem;
+    font-size: 1.7em;
+}
+[type="range"] {
+    width: 100%;
+    max-width: 20rem;
+    padding:10px;
+    display: block;
+}

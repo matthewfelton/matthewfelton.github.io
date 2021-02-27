@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>StormCenter : Enlightened Day</title>
+    <meta name="description" content="stormcenter page for weather site">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div id="popup"> Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <div class="full_header flex clearfix">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo for enlightened day">
+            </div>
+            <div class="headings">
+                <h1>Enlightened Day</h1>
+                <h2>There's always a Bright Side</h2>
+            </div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button id="primaryOpen" class="" onclick="toggleMenu()">&#9776; Menu</button>
+        <button id="primaryClose" class="disabled" onclick="toggleMenu()">X Menu</button>
+        <div class="maxSize">
+            <ul id="primaryNav" class="nav disabled">
+                <li><a href="#">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="maxSize">
+        <h1>StormCenter</h1>
+        <h3>See something we don't? Let us know!</h3>
+        <div class="storm">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="ftop">Full Name* <input type="text" name="fname" pattern="[A-za-z]{5,}" required> </label>
+                    <label class="ftop">Email <input type="email" name="email" placeholder="someone@gmail.com"> </label>
+                    <label class="ftop">Phone* <input type="tel" name="phone" placeholder="1256831234" required> </label>
+                    <label class="ftop">Zipcode* <input type="number" name="zipcode" required> </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Details</legend>
+                    <label class="ftop">Storm Date <input type="date" name="dateofstorm"></label>
+                    <label class="ftop">Storm Type <input name="storm" list="stormtype">
+                        <datalist id="stormtype">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricance"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+                    
+                        <label class="ftop">Storm Severity: <span id="stormseverity"></span></label>
+                        <label class="slider"><input type="range" name="severity" id="severity" min="1" max="10" step="1" value="5" 
+                            oninput="changeSeverity(this.value);" onchange="changeSeverity(this.value);"></label>
+                    <label class="ftop">Storm Region
+                        <select name="region">
+                            <option value>Select Region </option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+                    </label>
+                    <label class="sbs">Are you in Danger?</label> 
+                    <label class="sbs"><input type="radio" name="dangerzone" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="dangerzone" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="dangerzone" value="no"> No</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Informtion</legend>
+                    <textarea name="addedinfo" rows="40" cols="50" placeholder="Additional Comments here..."></textarea>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Report Your Storm Alert">
+            </form>
+        </div>
+        <div class="contact_us">
+            <h2>Contact Us</h2>
+            <div class="contact_whole">
+                <section class="address">
+                    <h3>Address:</h3>
+                    <p>The Weather Center<br>s
+                    123 Main Street.<br>
+                    Franklin, MI 87654</p>
+                </section>
+                <section class="method">
+                    <h3>Phone:</h3>
+                    <p>(801)555-1234</p>
+                    <h3>Email:</h3>
+                    <p>contact@yoururl.com</p>
+                </section>
+            </div>  
+        </div>
+    </main>
+    <footer><p>&copy; <span id="getYear"></span> | Matthew J. Felton | <span id="currentYear"></span> </p></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
