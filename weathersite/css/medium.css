@@ -119,7 +119,7 @@
     form textarea {
         max-width: 28rem;
     }
-    [type="range"] {
+    .slider{
        max-width: 28rem;
     }
 }

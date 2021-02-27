@@ -317,7 +317,7 @@ form input.submitBtn {
     max-width: 25rem;
     font-size: 1.7em;
 }
-[type="range"] {
+.slider {
     width: 100%;
     max-width: 20rem;
     padding:10px;
