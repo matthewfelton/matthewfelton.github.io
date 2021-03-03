@@ -234,10 +234,6 @@ footer p {
     text-align: center;
 }
 
-.gallery figure {
-
-}
-
 .gallery figure img {
     display: block;
     filter: blur(0em);
