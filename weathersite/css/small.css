@@ -317,6 +317,12 @@ form input.submitBtn {
     max-width: 25rem;
     font-size: 1.7em;
 }
+form input.submitBtn:hover {
+    background-color: #ffbf1f;
+    color: #023047;
+    border: 2pt solid #023047;
+    cursor: pointer;
+}
 .slider {
     width: 100%;
     max-width: 20rem;
