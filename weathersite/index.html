@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>StormCenter : Enlightened Day</title>
+    <title>Home : Enlightened Day</title>
     <meta name="description" content="stormcenter page for weather site">
     
     <link rel="stylesheet" href="css/normalize.css">
@@ -29,21 +29,27 @@
         <button id="primaryClose" class="disabled" onclick="toggleMenu()">X Menu</button>
         <div class="maxSize">
             <ul id="primaryNav" class="nav disabled">
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
                 <li><a href="sodasprings.html">Soda Springs</a></li>
                 <li><a href="fishhaven.html">Fish Haven</a></li>
-                <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery-7.html">Gallery</a></li>
             </ul>
         </div>
     </nav>
     <main class="maxSize">
-        <h1>StormCenter</h1>
-        <h2>Thank You for Sharing your Alert</h2>
-        <p>If you need anything else, please reach out to the contact information below</p>
-        
+        <div class="hero_summary">
+            <picture class="hero_img">
+                <source media="(max-width: 500px)" srcset="images/homehero500x238.jpg">
+                <source media="(max-width: 1024px)" srcset="images/homehero704x335.jpg">
+                <img src="images/homehero1024x487.jpg" alt="view of town"> 
+            </picture>
+            <!-- <img class="hero_img" src="images/hero.jpeg" alt="view of a town"> -->
         </div>
+       <div class="cards">
+
+       </div>
         <div class="contact_us">
             <h2>Contact Us</h2>
             <div class="contact_whole">
@@ -66,5 +72,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/imagehandling.js"></script>
+    <script src="js/towndata.js"></script>
 </body>
 </html>
