@@ -328,3 +328,28 @@ form input.submitBtn:hover {
     padding:10px;
     display: block;
 }
+/*-------Home--------*/
+.cards {
+    display: inline-block;
+    
+}
+.cards section {
+    background-color: #8ecae6;
+    border: 2px solid #023047;
+    margin: 5px;
+    max-width: 360px;
+}
+.cards section:hover {
+    box-shadow: 0 0 50px #000;
+}
+.details {
+    text-align: center;
+}
+.title {
+    text-align: center;
+}
+.card-image { 
+    width: 350px;
+    margin: auto 5px auto 5px;
+
+}
