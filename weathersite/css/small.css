@@ -199,6 +199,9 @@ main h1, h2, h3, p {
 .top {
     display: none;
 }
+.topl {
+    display: none;
+}
 .bottom {
     width: 100%;
 }
