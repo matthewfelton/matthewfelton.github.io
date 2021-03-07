@@ -331,7 +331,6 @@ form input.submitBtn:hover {
 /*-------Home--------*/
 .cards {
     display: block;
-    margin: auto;
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -341,8 +340,7 @@ form input.submitBtn:hover {
     border: 2px solid #023047;
     margin: 5px;
     max-width: 340px;
-    
-
+    margin: 10px auto;
 }
 .cards section:hover {
     box-shadow: 0 0 50px #000;
