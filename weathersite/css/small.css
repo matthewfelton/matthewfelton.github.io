@@ -330,26 +330,24 @@ form input.submitBtn:hover {
 }
 /*-------Home--------*/
 .cards {
-    display: inline-block;
-    
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 .cards section {
     background-color: #8ecae6;
     border: 2px solid #023047;
     margin: 5px;
-    max-width: 360px;
+    max-width: 340px;
+    
+
 }
 .cards section:hover {
     box-shadow: 0 0 50px #000;
 }
-.details {
-    text-align: center;
-}
-.title {
-    text-align: center;
-}
-.card-image { 
-    width: 350px;
-    margin: auto 5px auto 5px;
 
+.card-image { 
+    width: 100%;
 }

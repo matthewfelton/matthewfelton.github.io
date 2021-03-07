@@ -11,7 +11,7 @@ fetch(requestURL)
             
             let namediv = document.createElement("div");
             namediv.classList.add("title");
-            card.appendChild(namediv);
+            
             let name = document.createElement("h2");
             namediv.appendChild(name);
             name.textContent = towns[i].name;
@@ -21,7 +21,7 @@ fetch(requestURL)
 
             let detaildiv = document.createElement("div");
             detaildiv.classList.add("details");
-            card.appendChild(detaildiv);
+          
             let year = document.createElement("p");
             year.textContent = "Year Founded: " + towns[i].yearFounded;
             detaildiv.appendChild(year);
@@ -37,9 +37,11 @@ fetch(requestURL)
             image.setAttribute('loading', 'lazy');
             image.setAttribute('alt', towns[i].name);
             image.classList.add("card-image");
-            card.appendChild(image);
             
-
+            card.appendChild(image);
+            card.appendChild(namediv);
+            card.appendChild(detaildiv);
+            
             document.querySelector("div.cards").appendChild(card);
         }
     }
