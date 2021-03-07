@@ -331,8 +331,6 @@ form input.submitBtn:hover {
 /*-------Home--------*/
 .cards {
     display: block;
-    justify-content: center;
-    align-content: center;
     text-align: center;
 }
 .cards section {
