@@ -29,6 +29,12 @@ fetch(apiURL)
     document.getElementById('windSpeed').textContent = Math.round(weatherlist[0].wind.speed);
     const temperature = parseFloat(weatherlist[0].main.temp)
     const wSpeed = parseFloat(weatherlist[0].wind.speed)
+    if (wSpeed > 3 && temperature <= 50){
+      let wc = Math.round(35.74 + (0.6215 * temperature) - (35.75 * Math.pow(wSpeed, 0.16)) + (0.4275 * temperature * Math.pow(wSpeed, 0.16)));
+      document.getElementById("windChill").textContent = wc + "\xB0F;";
+    } else {
+      document.getElementById("windChill").textContent = "None";
+   }
     
     for (i = 0; i < weatherlist.length; i++) {
       let time = weatherlist[i].dt_txt;
