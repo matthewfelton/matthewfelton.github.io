@@ -5,7 +5,7 @@ header, footer {
     padding: 1rem 2%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Patua One', cursive;
 }
 p {
@@ -102,7 +102,7 @@ nav button {
 }
 
 /* main rules here */
-main h1, h2, h3, p {
+main h1, h2, h3, h4, p {
     padding-left: 10px;
 }
 .hero_summary {
@@ -212,7 +212,7 @@ main h1, h2, h3, p {
     padding: 10px;
     margin-bottom: 2%
 }
-main h1, h2, h3, p {
+main h1, h2, h3, h4, p {
     color: #023047;
 }
 /* footer rules here */
