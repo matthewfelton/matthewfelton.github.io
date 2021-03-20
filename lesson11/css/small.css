@@ -259,7 +259,7 @@ footer p {
 .gallery figure img {
     display: block;
     filter: blur(0em);
-    transition: filter 2s;
+    transition: filter 1s;
     width: 100%;
     margin: 0;
 }
