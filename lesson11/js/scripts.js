@@ -46,12 +46,6 @@ document.getElementById("currentYear").textContent = fulldate;
 //} else {
 //    element.classList.add("hideme");
 //}
-let dayofweek = d.getDay();
-if (dayofweek == 5) {
-    document.getElementById("popup").classList.toggle("showme");
-} else {
-    document.getElementById("popup").classList.toggle("hideme");
-}
 
 WebFont.load({
     google: {
