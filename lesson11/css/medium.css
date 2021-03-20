@@ -45,6 +45,12 @@
     .label_data {
         line-height: .7;
     }
+    .upcoming h3 {
+        font-size: 2em;  
+    }
+    .upcoming p {
+        font-size: 1.5em;
+    }
     .forecast {
         display: block;
     }

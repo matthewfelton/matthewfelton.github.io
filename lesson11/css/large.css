@@ -23,6 +23,9 @@
         top: 60px;
         left: 90px;
     }
+    .upcoming {
+        max-width: 60%;
+    }
     .w_forecast {
         gap: 60px;
     }
