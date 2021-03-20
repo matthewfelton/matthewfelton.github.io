@@ -11,7 +11,8 @@ weekDay[5] = "Friday";
 weekDay[6] = "Saturday";
 
 
-const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=300a54035f682f83ebf3aa7d44d398ba";
+const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=300a54035f682f83ebf3aa7d44d398ba";
+    
 
 //Go fetch it and then wait for a response.
 fetch(apiURL)
@@ -75,3 +76,26 @@ fetch(apiURL)
       } //end for
 
  }); //end of "then" fat arrow function
+ 
+ const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+ fetch(requestURL)
+ .then(function (response) {
+     return response.json();
+ })
+ .then(function (jsonObject) {
+     const towns = jsonObject["towns"];
+     for (let i = 0; i < towns.length; i++) {
+         if (towns[i].name == "Fish Haven") {
+ 
+            let eventBox = document.createElement("div");
+            eventBox.classList.add("events");
+            for (let x = 0; x < towns[i].events.length; x++) {
+                let event = document.createElement("p");
+                event.textContent = towns[i].events[x];
+                eventBox.appendChild(event);
+                document.getElementById("event_box").appendChild(eventBox);
+            }
+ 
+         }
+     }
+ })
