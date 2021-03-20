@@ -18,8 +18,8 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
     //Once it comes back, display it to the console.
-    console.log(weatherInfo);
-    console.log(weatherInfo.city.name);
+    //console.log(weatherInfo);
+    //console.log(weatherInfo.city.name);
     let forecastDayNumber = todayDayNumber;
     const weatherlist = weatherInfo.list;
 
@@ -105,5 +105,5 @@ fetch(apiURL)
  } else {
      document.getElementById("popup").classList.toggle("hideme");
  }
- console.log(dayofweek);
+ //console.log(dayofweek);
  
