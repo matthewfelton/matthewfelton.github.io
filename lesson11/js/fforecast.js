@@ -12,6 +12,7 @@ weekDay[6] = "Saturday";
 
 
 const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=300a54035f682f83ebf3aa7d44d398ba";
+    
 
 //Go fetch it and then wait for a response.
 fetch(apiURL)
