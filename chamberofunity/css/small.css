@@ -1,0 +1,56 @@
+/*head and font style*/
+header {
+    background-color: #2689ad;
+    color: #ffffff;
+    padding: .5rem 2%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Old Standard TT', serif;
+}
+p {
+    font-family: 'Merriweather', serif;
+}
+.fullHeader {
+    display: flex;
+}
+.headerLogo {
+    width: 70px;
+    margin-left: 5px;
+}
+.headerTitles {
+    flex-direction: column;
+}
+.headerTitles h1 {
+    margin: 0; 
+    font-size: 1.5rem;
+    text-align: right;
+    padding-top: 5px;
+}
+.headerTitles h2 {
+    margin: 0; 
+    font-weight: normal; 
+    font-size: 1rem;
+    text-align: right;
+}
+header button {
+    background-color: #2689ad;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: block;
+    margin: 0;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+/*hide property*/
+.disabled {
+    display: none;
+}
+/*clearfix*/ 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
