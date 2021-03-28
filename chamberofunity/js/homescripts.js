@@ -33,7 +33,7 @@ fetch(apiURL)
             let theDay = document.createElement("div");
             theDay.classList.add("w_box");
   
-            let dayName = document.createElement("h3");
+            let dayName = document.createElement("h4");
             let theDayName = document.createElement("span");
             theDayName.textContent = weekDay[i];
             dayName.appendChild(theDayName);
