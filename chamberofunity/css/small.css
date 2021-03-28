@@ -161,7 +161,7 @@ main {
     background-color: #ad6415;
 }
 .weather {
-    padding-top: 20px;
+    padding: 20px;
     width: 18rem;
     margin: 8px auto;
 }
