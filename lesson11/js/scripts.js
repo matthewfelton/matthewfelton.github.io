@@ -49,7 +49,7 @@ document.getElementById("currentYear").textContent = fulldate;
 
 WebFont.load({
     google: {
-        families: ["Patua One", "Merriweather"]
+        families: ["Old Standard TT", "Merriweather"]
     }
 });
 
