@@ -105,6 +105,31 @@ footer .info {
 .social {
     padding: 5px;
 }
+/*main home*/
+main {
+    max-width: 67.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.hero {
+    position: relative;
+}
+.heroImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px auto;
+    max-width: 64rem;
+}
+.heroImg img {
+    display: block;
+    width: 100%;
+}
+
+
+
+
 /*hide property*/
 .disabled {
     display: none;
