@@ -100,7 +100,7 @@ footer .info {
     grid-row: 2/3;
 }
 .info .last {
-    color: yellow;
+    color: #000000;
 }
 .social {
     padding: 5px;
