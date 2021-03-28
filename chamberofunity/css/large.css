@@ -1,0 +1,19 @@
+@media only screen and (min-width: 1024px) {
+    .headerLogo {
+        width: 100px;
+    }
+    .headerTitles h1 {
+        font-size: 2rem;
+  
+    }
+    .headerTitles h2 {
+        font-size: 1.5rem;
+    }
+    nav ul li {
+        font-size: 1.2rem;
+    }
+
+
+
+
+}
