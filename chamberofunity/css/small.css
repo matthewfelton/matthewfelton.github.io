@@ -69,6 +69,32 @@ nav a:hover {
     background-color: #ad6415;
 }
 /*footer*/
+footer {
+    background-color: #ad6415;
+    color: #ffffff;
+    padding: .5rem 2%;
+}
+footer .footerData {
+    display: grid;
+    grid-template-columns:  1fr 250px 80px 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+footer p, footer h3, footer h4 {
+    font-size: 0.8em;
+}
+footer .contact {
+    grid-column: 2/3;
+}
+footer .socialIcons {
+    grid-column: 3/4;
+    width:50px;
+}
+footer .info {
+    text-align: center;
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
 
 
 /*hide property*/
