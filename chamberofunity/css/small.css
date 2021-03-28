@@ -43,6 +43,32 @@ header button {
     font-size: 1.9rem;
     text-align: center;
 }
+/* nav rules here */
+nav {
+    background-color: #2689ad;
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav a {
+    color: #ffffff;
+    display: block;
+    padding: 0.6rem 0;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #faa850;
+    color: #000000;
+}
+.active {
+    color: #6bd8ff;
+    background-color: #ad6415;
+}
+
 
 /*hide property*/
 .disabled {
