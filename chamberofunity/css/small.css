@@ -132,7 +132,7 @@ main {
     background-color:#6bd8ff;
     margin: 8px auto;
     position: absolute;
-    top: -1px;
+    top: -8px;
     right: 10px;
     opacity: .8;
 }
@@ -147,8 +147,19 @@ main {
     font-size: 0.8em;
     opacity: 1;
 }
+.purpose button {
+    width: 100%;
+    color: #ffffff;
+    background-color: #2689ad;
+    border: none;
+    font-size: 1.5em;
+    height: 35px;
+}
+.purpose button:hover {
+    color: #000000;
+    background-color: #ad6415;
 
-
+}
 
 /*hide property*/
 .disabled {
