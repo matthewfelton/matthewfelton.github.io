@@ -90,6 +90,7 @@ footer .contact {
     grid-column: 2/3;
 }
 footer .socialIcons {
+    display: block;
     grid-column: 3/4;
     width:50px;
 }
@@ -101,7 +102,9 @@ footer .info {
 .info .last {
     color: yellow;
 }
-
+.social {
+    padding: 5px;
+}
 /*hide property*/
 .disabled {
     display: none;
