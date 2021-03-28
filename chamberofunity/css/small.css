@@ -99,7 +99,7 @@ footer .info {
     grid-row: 2/3;
 }
 .info .last {
-    color: #6bd8ff;
+    color: yellow;
 }
 
 /*hide property*/
