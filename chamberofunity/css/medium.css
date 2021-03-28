@@ -57,7 +57,7 @@
     }
     footer .contact {
         grid-column: 1/3;
-        text-align: center;
+        text-align: left;
     }
     footer .socialIcons {
         grid-column: 3/4;
@@ -85,5 +85,19 @@
     }
     .social {
         display: block;
+    }
+
+    /*main home*/
+    .purpose {
+        width: 25rem;
+        top: 50px;
+        right: 30px;
+        opacity: 0.9;
+    }
+    .purpose h3 {
+        font-size: 1.5em;
+    }
+    .purpose p {
+        font-size: 1.1em;  
     }
 }
