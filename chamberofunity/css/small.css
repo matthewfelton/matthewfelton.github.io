@@ -231,8 +231,8 @@ main {
 }
 .alert button {
     background-color: #ffffff;
-    color: red;
-    border: 2px solid red;
+    color: darkred;
+    border: 2px solid darkred;
     display: block;
     width: 100%;
     padding: 10px;
