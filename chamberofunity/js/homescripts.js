@@ -25,9 +25,15 @@ fetch(apiURL)
     document.getElementById('currently').textContent = apiData.current.weather[0].description;
     document.getElementById('temp').textContent = Math.round(apiData.current.temp);
     document.getElementById('humidity').textContent = apiData.current.humidity;
-    document.getElementById('weatheralert').textContent = apiData.alerts[0].description;
-    document.getElementById("alerttitle").textContent = apiData.alerts[0].event;
 
+    /*console.log(apiData.alert);*/
+
+    if (apiData.alert == undefined){
+      document.getElementById("close").classList.toggle("disabled");
+    } else {
+      document.getElementById('weatheralert').textContent = apiData.alerts[0].description;
+      document.getElementById("alerttitle").textContent = apiData.alerts[0].event;
+    }
     for (i = 0; i < 3; i++) {
         let forecastDayNumber = todayDayNumber;
         
