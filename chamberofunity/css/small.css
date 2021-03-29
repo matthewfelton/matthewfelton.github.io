@@ -237,6 +237,11 @@ main {
     width: 100%;
     padding: 10px;
 }
+.events {
+    margin: 0 2%;
+    text-align: center;
+    font-size: 0.8em;
+}
 /*hide property*/
 .disabled {
     display: none;

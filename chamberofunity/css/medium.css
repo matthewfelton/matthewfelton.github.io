@@ -131,4 +131,7 @@
     .threedayForecast .w_box {
         width: 150px;
     }
+    .events {
+        font-size: 1em;
+    }
 }
