@@ -29,7 +29,7 @@ fetch(apiURL)
     /*console.log(apiData.alert);*/
 
     if (apiData.alert == undefined){
-      document.getElementById("close").classList.toggle("disabled");
+      document.getElementById("close").classList.add("disabled");
     } else {
       document.getElementById('weatheralert').textContent = apiData.alerts[0].description;
       document.getElementById("alerttitle").textContent = apiData.alerts[0].event;
@@ -69,5 +69,5 @@ fetch(apiURL)
  }); 
  function removeAlert() {
     
-  document.getElementById("close").classList.toggle("disabled");
+  document.getElementById("close").classList.add("disabled");
 }
