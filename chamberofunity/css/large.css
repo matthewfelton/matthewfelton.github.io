@@ -20,7 +20,9 @@
     .events {
         font-size: 1.2em;
     }
-
+    .advertisement {
+        max-width: 930px;
+    }
 
 
 }

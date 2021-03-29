@@ -109,8 +109,7 @@ footer .info {
 /*main home*/
 main {
     max-width: 67.5rem;
-    align-items: center;
-    justify-content: center;
+
     margin: 0 auto;
 }
 .hero {
@@ -241,6 +240,13 @@ main {
     margin: 0 2%;
     text-align: center;
     font-size: 0.8em;
+}
+.advertisement {
+    max-width: 300px;
+    margin: 2% auto;
+}
+.ads {
+    width: 300px;
 }
 /*hide property*/
 .disabled {

@@ -108,7 +108,6 @@
         max-width: 50rem;
         align-items: center;
         justify-content: center;
-        margin: 0 2%;
         display : grid;
         grid-template-columns: 1fr 1fr;
         width: auto;
@@ -133,5 +132,8 @@
     }
     .events {
         font-size: 1em;
+    }
+    .advertisement {
+        max-width: 620px;
     }
 }
