@@ -1,5 +1,11 @@
-const day = new Date();
-const todayDayNumber = day.getDay();
+function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
+const today = new Date();
+const todayDayNumber = today.getDay();
 
 //console.log(time);
 
@@ -34,13 +40,14 @@ fetch(apiURL)
       document.getElementById('weatheralert').textContent = apiData.alerts[0].description;
       document.getElementById("alerttitle").textContent = apiData.alerts[0].event;
     }
+    
+    var i;
+       
     for (i = 0; i < 3; i++) {
-        
-            let forecastdays = new Array(3);
-            forecastdays[0] = todayDayNumber;
-            forecastdays[1] = todayDayNumber + 1;
-            forecastdays[2] = todayDayNumber + 2;
-        
+         let forecastDayNumber = addDays(today, i).getDay()
+      
+
+  
 
         
             let theDay = document.createElement("div");
@@ -49,7 +56,7 @@ fetch(apiURL)
 
             let dayName = document.createElement("h4");
             let theDayName = document.createElement("span");
-            theDayName.textContent = weekDay[forecastdays[i]];
+            theDayName.textContent = weekDay[forecastDayNumber];
             dayName.appendChild(theDayName);
             
 
