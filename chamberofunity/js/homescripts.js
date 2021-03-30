@@ -1,7 +1,7 @@
 const day = new Date();
 const todayDayNumber = day.getDay();
 
-/*console.log(time);*/
+//console.log(time);
 
 const weekDay = new Array(7);
 weekDay[0] = "Sunday";
@@ -26,7 +26,7 @@ fetch(apiURL)
     document.getElementById('temp').textContent = Math.round(apiData.current.temp);
     document.getElementById('humidity').textContent = apiData.current.humidity;
 
-    /*console.log(apiData.alert);*/
+    //console.log(apiData.alert);
 
     if (apiData.alert == undefined){
       document.getElementById("close").classList.add("disabled");
@@ -35,16 +35,24 @@ fetch(apiURL)
       document.getElementById("alerttitle").textContent = apiData.alerts[0].event;
     }
     for (i = 0; i < 3; i++) {
-        let forecastDayNumber = todayDayNumber;
+        
+            let forecastdays = new Array(3);
+            forecastdays[0] = todayDayNumber;
+            forecastdays[1] = todayDayNumber + 1;
+            forecastdays[2] = todayDayNumber + 2;
+        
+
         
             let theDay = document.createElement("div");
             theDay.classList.add("w_box");
   
+
             let dayName = document.createElement("h4");
             let theDayName = document.createElement("span");
-            theDayName.textContent = weekDay[i];
+            theDayName.textContent = weekDay[forecastdays[i]];
             dayName.appendChild(theDayName);
             
+
             let iconcode = apiData.daily[i].weather[0].icon;
             let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
             let weatherIcon = document.createElement("img");
@@ -62,7 +70,7 @@ fetch(apiURL)
            
   
             document.getElementById("weatherforecast").appendChild(theDay);
-    
+          
             
         } 
    

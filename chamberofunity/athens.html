@@ -5,20 +5,14 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
-    <title>Home: Chamber of Unity</title>
-    <meta name="description" content="home page of the camber of unity" />
+    <title>Athens: Chamber of Unity</title>
+    <meta name="description" content="Athens page of the camber of unity" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
-    <div id="close" class="alert">
-        <h1>Alert <span id="alerttitle"></span></h1>
-        <p><span id="weatheralert"></span></p>
-        <button id="alertClose" class="" onclick="removeAlert()">Close Weather Alert</button>
-        
-    </div>
     <header>
         <div class="fullHeader clearfix">
             
@@ -36,8 +30,8 @@
     <nav>
         <div class="navContainer">
             <ul id="primaryNav" class="nav disabled">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="athens.html">Athens</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="athens.html">Athens</a></li>
                 <li><a href="join.html">Join Us</a></li>
                 <li><a href="directory,html">Directory</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -47,9 +41,9 @@
     <main>
         <div class="hero">
             <picture class="heroImg">
-                <source media="(max-width: 500px)" srcset="images/homehero500x238.jpg">
-                <source media="(max-width: 1024px)" srcset="images/homehero704x335.jpg">
-                <img src="images/homehero1024x487.jpg" alt="view of athens courthouse"> 
+                <source media="(max-width: 500px)" srcset="images/athenshero500x238.jpg">
+                <source media="(max-width: 1024px)" srcset="images/athenshero704x335.jpg">
+                <img src="images/athenshero1024x487.jpg" alt="view of athens college"> 
             </picture>
             <section class="purpose">
                 <h3>We are here for you</h3>
@@ -62,35 +56,26 @@
                 <button type="button" onclick="location.href='join.html';" >UNITE WITH US TODAY!</button>
             </section>
         </div>
-        <div class="weather">
-            <section class="currentWeather">
-                <h3>Current Weather</h3>
-                <div class="labels">
-                    <p>Currently:</p>
-                    <p>Current:</p>
-                    <p>Humidity:</p>
-                </div>
-                <div class="labelsData">
-                    <p><span id="currently"></span></p>
-                    <p><span id="temp"></span>&#176;F</p>
-                    <p><span id="humidity"></span></p>
-                </div>
-            </section>
-            <div id="weatherforecast" class="threedayForecast">
-                <h3>3-Day Forecast</h3>
-            </div>
-        </div>
-        <div class="advertisement">
-            <h2>Check out these local Businesses</h2>
-            <a class="ads" href="//www.eatatjacks.com/">
-                <img class="ads" src="images/jacksad.jpg" alt="advertisement for Jacks">
-            </a>
-            <a class="ads" href="//www.lawlersbarbecue.com/">
-                <img class="ads" src="images/lawyerad.jpg" alt="advertisement for lawlers">
-            </a>
-            <a class="ads" href="//www.popeyes.com/">
-                <img class="ads" src="images/popeyead.jpg" alt="advertisement for popeyes">
-            </a>
+        <div class="athens">
+            <h2>Athens Alabama</h2>
+            <p>Located in north-central Alabama, 15 miles from the Tennessee border, Athens is the
+                county seat of Limestone County. Since its founding in 1818, one year before Alabama's
+                admittance into the Union, Athens has contributed significantly to shaping the history
+                of the state. Home to three Alabama governors and the state's oldest institution of higher
+                education, Athens boasts a number of historic buildings and residences. Originally an
+                agricultural community, Athens has evolved into a
+                major center of technology in North Alabama. Athens has a mayor-council form of government.</p>
+            <h3>Demographics</h3>
+            <p>The population of Athens, according to 2016 Census estimates, was
+                24,461. Of that total, 74.4 percent of respondents identified
+                themselves as white, 17.5 percent as African American, 8.8 percent
+                Hispanic, 3.1 percent as two or more races, 0.9 percent as Native
+                American, 0.7 percent as Asian, and 0.1 percent as Native Hawaiian
+                and Other Pacific Islander. The city's median household income was
+                $44,920, and the per capita income was $28,865.</p>
+            <h3>Education</h3>
+            <p>The Athens City School System has four elementary schools, one intermediate school,
+                one middle school, and one high school. The city has two private K-12 schools.</p>
         </div>
         <div class="events">
             <h2>Upcoming Local Events</h2>
@@ -133,7 +118,7 @@
                 </a>
             </div>
             <div class="info">
-                <p>Weather Data provided by OpenWeatherMap </p>
+                <p>Historical data provided by encyclopediaofalabama.org/article/h-2604 </p>
                 <p>&copy; <span id="getYear"></span> | Matthew Felton</p>
                 <p class="last"><span id="modified"></span></p>
             </div>
@@ -141,6 +126,5 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/allpagescripts.js"></script>
-    <script src="js/homescripts.js"></script>
   </body>
 </html>

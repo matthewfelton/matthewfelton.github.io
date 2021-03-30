@@ -19,7 +19,7 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
     //Once it comes back, display it to the console.
-    console.log(weatherInfo);
+    //console.log(weatherInfo);
     //console.log(weatherInfo.city.name);
     let forecastDayNumber = todayDayNumber;
     const weatherlist = weatherInfo.current;
