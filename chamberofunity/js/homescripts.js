@@ -18,7 +18,7 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
     
-    console.log(weatherInfo);
+    //console.log(weatherInfo);
 
     const apiData = weatherInfo;
 
