@@ -67,8 +67,8 @@ fetch(apiURL)
             weatherIcon.classList.add("w-icon");
             
             let theTemp = document.createElement("p");
-            theTemp.textContent = "Temp: " + Math.round(weatherInfo.daily[i].temp.day) + "\xB0";
-  
+            //theTemp.textContent = "Temp: " + Math.round(weatherInfo.daily[i].temp.day) + "\xB0";
+            theTemp.textContent = "Low: " + Math.round(apiData.daily[i].temp.min) + "\xB0" + "High: " + Math.round(apiData.daily[i].temp.max) + "\xB0" ;
     
             theDay.appendChild(dayName);
             theDay.appendChild(weatherIcon);
