@@ -26,19 +26,18 @@ fetch(apiURL)
     
     //console.log(weatherInfo);
 
-    const apiData = weatherInfo;
 
-    document.getElementById('currently').textContent = apiData.current.weather[0].description;
-    document.getElementById('temp').textContent = Math.round(apiData.current.temp);
-    document.getElementById('humidity').textContent = apiData.current.humidity;
+    document.getElementById('currently').textContent = weatherInfo.current.weather[0].description;
+    document.getElementById('temp').textContent = Math.round(aweatherInfo.current.temp);
+    document.getElementById('humidity').textContent = weatherInfo.current.humidity;
 
     //console.log(apiData.alert);
 
     if (apiData.alert == undefined){
       document.getElementById("close").classList.add("disabled");
     } else {
-      document.getElementById('weatheralert').textContent = apiData.alerts[0].description;
-      document.getElementById("alerttitle").textContent = apiData.alerts[0].event;
+      document.getElementById('weatheralert').textContent = weatherInfo.alerts[0].description;
+      document.getElementById("alerttitle").textContent = weatherInfo.alerts[0].event;
     }
     
     var i;
@@ -60,15 +59,15 @@ fetch(apiURL)
             dayName.appendChild(theDayName);
             
 
-            let iconcode = apiData.daily[i].weather[0].icon;
+            let iconcode = weatherInfo.daily[i].weather[0].icon;
             let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
             let weatherIcon = document.createElement("img");
             weatherIcon.src = iconPath;
-            weatherIcon.setAttribute("alt", apiData.daily[0].weather[0].description)
+            weatherIcon.setAttribute("alt", weatherInfo.daily[0].weather[0].description)
             weatherIcon.classList.add("w-icon");
             
             let theTemp = document.createElement("p");
-            theTemp.textContent = "Temp: " + Math.round(apiData.daily[i].temp.day) + "\xB0";
+            theTemp.textContent = "Temp: " + Math.round(weatherInfo.daily[i].temp.day) + "\xB0";
   
     
             theDay.appendChild(dayName);
