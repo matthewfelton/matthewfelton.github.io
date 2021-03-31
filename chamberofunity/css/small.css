@@ -254,7 +254,9 @@ main {
 .athens {
     margin: 8px;
 }
-
+.athens img {
+    width: 100%;
+}
 
 /*hide property*/
 .disabled {

@@ -137,4 +137,8 @@
     .advertisement {
         max-width: 620px;
     }
+    .athens img {
+        width: 400px;
+        float: right;
+    }
 }
