@@ -137,8 +137,12 @@
     .advertisement {
         max-width: 620px;
     }
-    .athens img {
+    .athens figure {
         width: 400px;
         float: right;
     }
+    .athens figure img {
+        width:  400px;
+    }
+    
 }

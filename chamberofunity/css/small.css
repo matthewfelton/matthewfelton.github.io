@@ -254,10 +254,17 @@ main {
 .athens {
     margin: 8px;
 }
-.athens img {
-    width: 100%;
+.athens figure {
+    width: 300px;
+    margin: 2% auto;
 }
+.athens figure img {
+    width: 300px;
 
+}
+.athens figure figcaption {
+    text-align: center;
+}
 /*hide property*/
 .disabled {
     display: none;
