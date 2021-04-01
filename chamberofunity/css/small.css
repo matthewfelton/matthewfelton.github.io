@@ -126,14 +126,8 @@ main {
     width: 100%;
 }
 .purpose {
-    border: 2px solid #000000; 
-    width: 18rem;
-    background-color:#6bd8ff;
     margin: 8px auto;
-    position: absolute;
-    top: -8px;
-    right: 10px;
-    opacity: .8;
+    width: 18rem;
 }
 .purpose h3 {
     border-bottom: 1px solid #000000;
