@@ -39,35 +39,36 @@
         </div>
     </nav>
     <main>
-       <div class="Athens">
-        <h2>We are here for you</h2>
-        <p>At Chamber of Unity, we know there is more to a 
-            community than the bricks and the stones. That's why 
-            we strive to bring light to the people and businesses 
-            that truly bring the unity to community. While providing 
-            our local area with ways to reach out to members, join, 
-            and even find upcoming events nearby.</p>
-            
+       <div class="join">
+            <div class="joinpurpose">
+                <h2>We are here for you</h2>
+                <p>At Chamber of Unity, we know there is more to a 
+                    community than the bricks and the stones. That's why 
+                    we strive to bring light to the people and businesses 
+                    that truly bring the unity to community. While providing 
+                    our local area with ways to reach out to members, join, 
+                    and even find upcoming events nearby.</p>
+            </div>
             
             <form method="get" action="thanks.html">
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label class="ftop">First Name* <input type="text" name="fname" pattern="[A-za-z ]{5,}" required> </label>
-                    <label class="ftop">Last Name* <input type="text" name="lname" pattern="[A-za-z ]{5,}" required> </label>
-                    <label class="ftop">Title <input type="text" name="title" pattern="[A-za-z ]{5,}" > </label>
+                    <label class="ftop">First Name* <input type="text" name="fname" pattern="[A-za-z ]{5,}" required placeholder="Paul"> </label>
+                    <label class="ftop">Last Name* <input type="text" name="lname" pattern="[A-za-z ]{5,}" required placeholder="Smith"></label>
+                    <label class="ftop">Title <input type="text" name="title" pattern="[A-za-z ]{5,}" placeholder="Human Resource director"> </label>
                     <label class="ftop">Email* <input type="email" name="email" placeholder="someone@gmail.com" required> </label>
                     <label class="ftop">Cell Phone <input type="tel" name="phone" placeholder="1256831234"> </label>
                 </fieldset>
                  <fieldset>
                     <legend>Business Information</legend>
-                    <label class="ftop">Buisness Name* <input type="text" name="bname" pattern="[A-za-z ]{5,}" required> </label>
+                    <label class="ftop">Buisness Name* <input type="text" name="bname" pattern="[A-za-z ]{3,}" required> </label>
                     <label class="ftop">Buisness Address <input type="text" name="baddress" pattern="[A-za-z ]{5,}" placeholder="125 welcome court"> </label>
                     <label class="ftop">Buisness Website <input type="url" name="waddress" placeholder="www.placeyourlinkhere.com"> </label>
                     <label class="ftop">Buisness Description <textarea name="description" rows="20" cols="50" placeholder="Description here..."></textarea></label>
                 </fieldset>
                 <fieldset>
                     <legend>Membership Options</legend>
-                    <label class="sbs">Are you in Danger?</label> 
+                    <label class="sbs">Membership level (more information below)</label> 
                     <label class="sbs"><input type="radio" name="membership" value="non-profit"> Non-profit ($100)</label>
                     <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze ($200)</label>
                     <label class="sbs"><input type="radio" name="membership" value="silver"> Silver ($400)</label>
