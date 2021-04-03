@@ -23,6 +23,8 @@
     .advertisement {
         max-width: 930px;
     }
-
+    .directoryGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
 }
