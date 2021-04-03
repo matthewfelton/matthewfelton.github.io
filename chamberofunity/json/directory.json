@@ -1,0 +1,53 @@
+{
+    "businesses": [
+        {
+            "directoryId": 1,
+            "businessName": "Jack's Family Restaurants",
+            "phoneNumber": "(256)233-7085",
+            "logo": "images/logos/logo1.png",
+            "website": "//www.eatatjacks.com/"
+        },
+        {
+            "directoryId": 2,
+            "businessName": "Popeyes",
+            "phoneNumber": "(256)270-7436",
+            "logo": "images/logos/logo2.png",
+            "website": "//www.popeyes.com/"
+        },
+        {
+            "directoryId": 3,
+            "businessName": "Lawler's Barbecue",
+            "phoneNumber": "(256)233-1818",
+            "logo": "images/logos/logo3.png",
+            "website": "//www.lawlersbarbecue.com/"
+        },
+        {
+            "directoryId": 4,
+            "businessName": "Village Pizza",
+            "phoneNumber": "(256)233-7627",
+            "logo": "images/logos/logo4.png",
+            "website": "//www.villagepizzaathens.com/"
+        },
+        {
+            "directoryId": 5,
+            "businessName": "Kreme Delite",
+            "phoneNumber": "(256)232-9130",
+            "logo": "images/logos/logo5.png",
+            "website": "//www.zmenu.com/kreme-delite-athens-online-menu/"
+        },
+        {
+            "directoryId": 6,
+            "businessName": "Apsen Dental",
+            "phoneNumber": "(256)690-5099",
+            "logo": "images/logos/logo6.png",
+            "website": "//www.aspendental.com/"
+        },
+        {
+            "directoryId": 7,
+            "businessName": "Hometown Market",
+            "phoneNumber": "(256)232-2194",
+            "logo": "images/logos/logo7.png",
+            "website": "//www.hometownmarkets.com/"
+        }
+    ]
+}
