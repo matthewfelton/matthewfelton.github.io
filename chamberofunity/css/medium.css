@@ -150,4 +150,8 @@
     .directoryGrid {
         grid-template-columns: 1fr 1fr;
     }
+    .buttoncontainer {
+        display: block;
+        margin-left: 80%;
+    }
 }

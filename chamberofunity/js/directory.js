@@ -1,3 +1,20 @@
+
+function switchgrid() {
+
+    document.getElementById("swap").classList.add("directoryGrid");
+    document.getElementById("swap").classList.remove("directoryList");
+}
+
+function switchlist() {
+
+    document.getElementById("swap").classList.remove("directoryGrid");
+    document.getElementById("swap").classList.add("directoryList");
+}
+
+
+
+
+
 const requestURL = 'json/directory.json';
 
 fetch(requestURL)
@@ -40,7 +57,7 @@ fetch(requestURL)
             card.appendChild(bInfo);
             
         
-            document.querySelector('div.directoryGrid').appendChild(card);
+            document.querySelector('div.directoryList').appendChild(card);
         }
     
     });
