@@ -26,5 +26,7 @@
     .directoryGrid {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    .board {
+        font-size: 1.5em;
+    }
 }
