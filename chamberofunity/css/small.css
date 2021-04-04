@@ -368,6 +368,25 @@ table, th, td {
 .directoryGrid section:nth-child(odd) {
     background-color: #2689ad;
 }
+.directoryList {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    text-align: right;
+}
+.directoryList section{
+    padding-top: 50px;
+}
+.directoryList img {
+    float: left;
+    padding-right: 5px;
+}
+.directoryList h2 {
+    font-size: 1em;
+}
+.directoryList p {
+    font-size: .8em;;
+}
 .buttoncontainer {
     margin: 2% 60% auto;
     width: 100px;

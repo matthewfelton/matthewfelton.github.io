@@ -150,6 +150,25 @@
     .directoryGrid {
         grid-template-columns: 1fr 1fr;
     }
+    .directoryList {
+        margin: 2% auto;
+       max-width: 30rem;
+    }
+    .directoryList section{
+        padding-top: 50px;
+    }
+    .directoryList img {
+        float: left;
+        padding-right: 5px;
+        width: 140px;
+    }
+    .directoryList h2 {
+        font-size: 1.5em;
+    }
+    .directoryList p {
+        font-size: 1em;;
+    }
+    
     .buttoncontainer {
         display: block;
         margin-left: 80%;
