@@ -78,6 +78,7 @@ footer {
     background-color: #ad6415;
     color: #ffffff;
     padding: .5rem 2%;
+    height: 350px;
 }
 footer .footerData {
     display: grid;
