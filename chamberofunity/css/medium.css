@@ -152,6 +152,14 @@
     form {
         margin: 2% auto;
     }
+    .joinpurpose {
+        margin: 8px auto;
+        width: 80%;
+    }
+    
+    .joinpurpose p {
+        font-size: 1em;
+    }
     /*directory*/
     .directoryGrid {
         grid-template-columns: 1fr 1fr;

@@ -346,9 +346,20 @@ table, th, td {
     width: auto;
     padding: 5px; 
 }
+
 .joinpurpose {
-    text-align: left;
-    padding: 10px;
+    margin: 8px auto;
+    width: 18rem;
+}
+.joinpurpose h2 {
+    border-bottom: 1px solid #000000;
+    margin: 5px auto;
+    text-align: center;
+}
+.joinpurpose p {
+    margin: 5px auto;
+    text-align: center;
+    font-size: 0.8em;
 }
 /*directory page*/
 .directoryGrid {
