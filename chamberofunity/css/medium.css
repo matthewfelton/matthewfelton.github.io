@@ -140,6 +140,7 @@
     .advertisement {
         max-width: 620px;
     }
+    /*athens*/
     .athens figure {
         width: 400px;
         float: right;
@@ -147,10 +148,11 @@
     .athens figure img {
         width:  400px;
     }
+    /*join*/
     form {
         margin: 2% auto;
     }
-
+    /*directory*/
     .directoryGrid {
         grid-template-columns: 1fr 1fr;
     }

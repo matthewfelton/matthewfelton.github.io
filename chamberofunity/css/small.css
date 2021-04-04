@@ -403,6 +403,29 @@ table, th, td {
     padding-top: 5px;
    
 }
+/*contact page*/
+.contactPage {
+    margin: 2% 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contactForm fieldset label input{
+    width: 16rem;
+}
+.pageContact {
+    text-align: left;
+} 
+.googlemap {
+    Width: 300px;
+    height: 300px;
+    margin: 2% auto;
+}
+.board {
+    text-align: left;
+}
+.board ul li{
+    list-style-type: none;
+}
 
 /*hide property*/
 .disabled {
