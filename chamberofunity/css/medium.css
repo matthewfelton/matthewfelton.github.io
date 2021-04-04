@@ -182,6 +182,7 @@
     .googlemap {
         height: 250px;
         grid-column: 1/3;
+        margin-bottom: 0;
     }
     .contactPage {
         display: grid;
