@@ -416,7 +416,7 @@ table, th, td {
     text-align: left;
 } 
 .googlemap {
-    Width: 350px;
+    Width: 100%;
     height: 350px;
     margin: 2% auto;
 }
