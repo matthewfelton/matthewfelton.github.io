@@ -147,6 +147,10 @@
     .athens figure img {
         width:  400px;
     }
+    form {
+        margin: 2% auto;
+    }
+
     .directoryGrid {
         grid-template-columns: 1fr 1fr;
     }

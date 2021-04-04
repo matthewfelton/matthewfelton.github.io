@@ -262,7 +262,7 @@ main {
 /*Join page*/
 form {
     max-width: 24rem;
-    margin: 2% auto;
+    margin: 2%;
 }
 form label.ftop input:required {
     border-left: red solid 6px;
@@ -303,7 +303,7 @@ form label.ftop input, form label.ftop select {
     padding: .75rem;
     color: #000000;
     width: 100%;
-    max-width: 19rem;
+    max-width: 18rem;
     
 }
 form label.sbs {
