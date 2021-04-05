@@ -407,13 +407,15 @@ table, th, td {
     text-align: center;
     border: 1px solid #000000;
     display: none;
+    padding-top: 5px;
 }
 .display {
     width: 40px;
     height: 40px;
     margin: 2%;
-    padding-top: 5px;
-   
+}
+.currentView {
+    background-color: #ad6415;
 }
 /*contact page*/
 .contactPage {
