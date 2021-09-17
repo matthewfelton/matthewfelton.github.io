@@ -4,3 +4,6 @@ body {
     margin: auto 0;
     text-align: center;
 }
+main {
+    max-width: 500px;
+}
