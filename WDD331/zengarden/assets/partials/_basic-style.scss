@@ -1,0 +1,457 @@
+/* -------------------------------- 
+xBasic style
+-------------------------------- */
+
+*, *::after, *::before {
+	@include box-sizing(border-box);
+}
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+
+body {
+	font-size: 1.6rem;
+	font-family: $primary-font;
+	margin: 2%;
+	background-color: lighten($color-2, 82%);
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	text-align: $text-align;
+	font-family:$secondary-font;
+	font-size: 3.8em;
+	color:$color-2;
+	animation: fadeIn linear 4s;
+	-webkit-animation: fadeIn linear 4s;
+	-moz-animation: fadeIn linear 4s;
+	-o-animation: fadeIn linear 4s;
+	-ms-animation: fadeIn linear 4s;
+  }
+  @keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  @-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  @-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  @-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  @-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  h2 {
+	margin-top: -10px;
+	text-align: $text-align;
+	font-family:$primary-font;
+	font-size: 2.3em;
+	color: $color-2;
+	animation: fadeIn linear 4s;
+	-webkit-animation: fadeIn linear 4s;
+	-moz-animation: fadeIn linear 4s;
+	-o-animation: fadeIn linear 4s;
+	-ms-animation: fadeIn linear 4s;
+  }
+  @keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  @-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  @-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  @-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  @-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+  h3 {
+	text-transform: uppercase;
+	font-family:$primary-font;;
+  }
+	
+  p {
+	font-family:$primary-font;
+	text-align: $text-align;
+  }
+
+  .design-selection {
+	border-top: 7px solid $color-4;
+	list-style-type: none;
+	padding-bottom: 14px;
+	border-bottom: 7px solid $color-4;
+	line-height: 30px;
+  }
+
+  .design-archives {
+	padding-bottom: 14px;
+	border-bottom: 7px solid $color-4;
+	line-height: 30px;
+  }
+
+  .zen-resources {
+	list-style-type: none;
+	padding-bottom: 14px;
+	border-bottom: 7px solid $color-4;
+	line-height: 30px;
+  }
+  
+  ul{
+	list-style-type: none;
+  }
+
+  
+  .intro {
+	display: grid;
+	grid-template-columns: 1fr;
+	h2 {
+		color: $color-4;
+	}
+
+	&::before {
+		content: ''; 
+		background-image: url(assets/images/logo-crop.png);
+		background-size: 350px 350px; 
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%; 
+		height: 450px;
+	}
+  }
+  
+  .summary {
+	text-align: $text-align;
+	font-style: italic;
+	padding-top: 10px;
+	border-top: 7px solid $color-2;
+  }
+  
+  .preamble {
+	text-align: $text-align;
+    padding-top:18px;
+	padding-bottom: 10px;
+	position: relative; 
+	
+	&::before {
+		content: ''; 
+		background-image: url(assets/images/Flower-6-web.png);
+		background-size: cover; 
+		width: 175px; 
+		height: 175px;
+		position: absolute; // Position to the nearest positioned ancestor. (Which is the the preamble)	
+		top: 30px;
+		left: 230px; 
+		opacity: .25;
+	}
+  }
+  
+  .supporting {
+	text-align: $text-align;
+	padding-top: 18px;
+	padding-bottom: 60px;
+  }
+
+  .explanation {
+	padding-top: 15px;
+	padding-bottom: 25px;
+	background: $color-1;
+	 p, h3 {
+		color: lighten($color-2, 82%);
+	 }
+  }
+  
+  .participation {
+	text-align: $text-align;
+	padding-top: 18px;
+	padding-bottom: 30px;
+	position: relative;
+  
+		&::before {
+			content: ''; 
+			background-image: url(assets/images/Flower-web.png);
+			background-size: cover; 
+			width: 200px; 
+			height: 200px;
+			position: absolute; // Position to the nearest positioned ancestor. (Which is the the preamble)
+			top: 50px;
+			left: 230px; 
+			opacity: .25;
+		}
+  }
+  
+  .benefits {
+	text-align: $text-align;
+	padding-top: 18px;
+	padding-bottom: 40px;
+	position: relative;
+
+	&::after {
+		content: ''; 
+		background-image: url(assets/images/Flower-4-web.png);
+		background-size: cover; 
+		width: 300px; 
+		height: 300px;
+		position: absolute; 
+		top: 200px; 	
+	}
+	
+  }
+  
+  .requirements {
+	text-align: $text-align;
+	padding-top: 18px;
+	padding-bottom: 30px;
+	margin-top: -50px;
+	margin-bottom: 20px;
+	background: $color-1;
+	p, h3 {
+		color: lighten($color-2, 82%);
+	 }
+	 p {
+		width: 620px;
+		margin-left: 10px;
+		font-size: 14px;
+	  }
+  } 
+
+ 
+
+  .zen-validate-html {
+	background-image: url(assets/images/icon-2-web.png);
+	background-size: cover; 
+	display: block;
+	height: 100px;
+	width: 100px;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 46px;
+	padding-left: 33px;
+  }
+
+  .zen-validate-css {
+	background-image: url(assets/images/icon-2-web.png);
+	background-size: cover; 
+	display: block;
+	height: 100px;
+	width: 100px;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 46px;
+	padding-left: 33px;
+  }
+
+  .zen-license {
+	background-image: url(assets/images/icon-2-web.png);
+	background-size: cover; 
+	display: block;
+	height: 100px;
+	width: 100px;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 46px;
+	padding-left: 33px;
+  }
+
+  .zen-accessibility {
+	background-image: url(assets/images/icon-2-web.png);
+	background-size: cover; 
+	display: block;
+	height: 100px;
+	width: 100px;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 46px;
+	padding-left: 33px;
+  }
+
+  .zen-github {
+	background-image: url(assets/images/icon-2-web.png);
+	background-size: cover; 
+	display: block;
+	height: 100px;
+	width: 100px;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 46px;
+	padding-left: 33px;
+  }
+ 
+  @include MQ(L) {
+
+  .design-selection {
+	margin-top: 640px;
+  }
+
+  .summary {
+	margin-top: -20px;
+	display: grid;
+	width: 650px;
+  }
+
+  .preamble {
+	display: grid;
+	width: 650px;
+  }
+
+  .supporting {
+	display: grid;
+	width: 650px;
+  }
+
+  .explanation {
+	display: grid;
+	width: 650px; 
+	p {
+	width: 620px;
+	margin-left: 10px;
+	}
+  }
+
+  .participation {
+	display: grid;
+	width: 650px;
+  }
+
+  .benefits {
+	display: grid;
+	width: 280px;
+	margin-left: 680px;
+	margin-top: -50px;
+
+  }
+
+  .requirements {
+	display: grid;
+	width: 650px;
+	margin-top: -200px;
+	margin-bottom: 20px;
+	 p {
+		width: 620px;
+		margin-left: 10px;
+		font-size: 14px;
+	  }
+  } 
+
+  .sidebar .wrapper {
+	margin-left: 680px;
+	margin-top: -2130px;
+	}
+
+}
+@include MQ(M) {
+	.supporting {
+		display: block;
+	}
+	
+	.summary {
+		width: auto;
+	  }
+	
+	  .preamble {
+		width: auto;
+	  }
+	
+	  .supporting {
+		width: auto;
+	  }
+	
+	  .explanation {
+		
+		width: auto; 
+		p {
+		width: auto;
+		
+		}
+	  }
+	  .participation {
+		width: auto;
+	  }
+	  .requirements {
+		width: auto;
+		margin: 0;
+		 p {
+			width: auto;
+		  }
+	  } 
+	  .benefits {
+		width: auto;
+		margin-left: 0;
+		margin-top: 0;
+		&::after {
+			top: -100px;
+			left: 300px;
+			opacity: .4;
+		}
+	  }
+	  .participation {
+			&::before {
+				top: -20px;
+				left: 350px;
+			}
+	  }
+	  .preamble {
+		&::before {	
+			left: 375px; 
+		}
+	  }
+	  .sidebar 
+	  	.wrapper {
+			display: block;	
+			margin-left: 0px;
+			margin-top: 0px;
+			text-align: center;
+		.design-selection {
+			margin: 0;
+			}
+		}
+		
+	}
+	@include MQ(S) {
+				 
+		  .benefits {
+	
+			&::after {
+				top: -20px;
+				left: 100px;
+			}
+		  }
+		  .participation {
+				&::before {
+					top: 100px;
+					left: 150px;
+				}
+		  }
+		  .preamble {
+			&::before {	
+				top: 40px;
+				left: 175px; 
+			}
+		  }
+		}
+		

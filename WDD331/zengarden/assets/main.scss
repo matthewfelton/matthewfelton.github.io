@@ -1,0 +1,60 @@
+/* CSS by Matthew Felton, Heather Holt, and Tauni Vance */
+
+// partial imports
+@import 'partials/reset';
+@import 'partials/prefix-mixins';
+@import 'partials/layout';
+@import 'partials/variables';
+@import 'partials/navigation';
+@import 'partials/colors';
+@import 'partials/typography';
+@import 'partials/buttons';
+@import 'partials/list';
+@import 'partials/branding';
+@import 'partials/basic-style';
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Main.scss */
+// Layout Styling
+
+.page-wrapper {
+	
+	margin: auto;
+	max-width: 1000px;
+
+}
+
+.main {
+	display: grid;
+	grid-template: auto auto auto 1fr auto / 1fr;
+}
+@include MQ(L){
+	footer {
+		display: grid;
+		grid-template: 3fr / 3fr 3fr 3fr 3fr 3fr;
+		margin-top: 20px;
+	}
+}
+
+@include MQ(M) {
+	
+	footer {
+		height: 500px;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+}
+
+@include MQ(S) {
+	
+	footer {
+		height: 500px;
+		grid-template: 1fr 1fr 1fr / 1fr 1fr;
+		.zen-github {
+			grid-column: 1/3;
+		}
+	}
+}
+

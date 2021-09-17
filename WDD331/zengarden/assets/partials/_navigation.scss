@@ -1,0 +1,226 @@
+/* navigation.scss */
+  
+  .cd-logo {
+    /* logo box style */
+    background-color: $color-1;
+    width: 50px;
+  
+    @include MQ(M) {
+      width: 80px;
+    }
+  }
+  
+  .cd-main-nav {
+    /* main navigation background color - full screen on small devices */
+    background: $color-2;
+    font-family: $primary-font;
+  
+    li a {
+      color: $color-5;
+      border-color: lighten($color-2, 5%);
+    }
+  
+    @include MQ(M) {
+      li a {
+        color: lighten($color-1, 40%);
+  
+        &.selected {
+          color: $color-5;
+          box-shadow: 0 2px 0 $color-1;
+        }
+  
+        &:hover {
+          color: $color-5;
+        }
+      }
+    }
+  }
+  
+  .cd-nav-trigger span {
+    /* hamburger menu */
+    background-color: $color-5;
+  
+    &::before,
+    &::after {
+      /* upper and lower lines */
+      background-color: $color-5;
+    }
+  }
+  
+  .nav-is-visible .cd-nav-trigger span {
+    /* hide line in the center on mobile when nav is visible */
+    background-color: rgba($color-5, 0);
+  
+    &::before,
+    &::after {
+      /* preserve visibility of upper and lower lines - close icon */
+      background-color: rgba($color-5, 1);
+    }
+  }
+  
+  .cd-download {
+    /* download button top-right visible on big devices */
+    background-color: lighten($color-2, 10%);
+  
+    .no-touch &:hover {
+      background-color: lighten($color-2, 15%);
+    }
+  
+    span {
+      /* tooltip */
+      background: $color-1;
+      color: $color-5;
+  
+      &::before {
+        /* right arrow color */
+        border-color: $color-1;
+      }
+    }
+  }
+  
+  .cd-primary-nav {
+    font-family: $secondary-font;
+    ul {
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      li {
+        flex-grow: 1;
+        a {
+          &:link {
+            color: $color-2;
+          }
+          &:visited {
+            color: lighten($color-2, 10%);
+          }
+          &:hover {
+            color: $color-1;
+          }
+          &:active {
+            color: $alert;
+          }
+        }
+      }
+    }
+  }
+
+  .cd-secondary-nav {
+    font-family: $primary-font;
+    font-weight: 600;
+    ul {
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      li {
+        flex-grow: 1;
+        a {
+          &:link {
+            color: $color-2;
+          }
+          &:visited {
+            color: lighten($color-2, 10%);
+          }
+          &:hover {
+            color: $color-1;
+          }
+          &:active {
+            color: $alert;
+          }
+        }
+      }
+    }
+  }
+ 
+  ul {
+    padding: 10px 0;
+    li {
+      a {
+        &:link {
+          color: $color-2;
+        }
+        &:visited {
+          color: lighten($color-2, 10%);
+        }
+        &:hover {
+          color: $color-1;
+        }
+        &:active {
+          color: $alert;
+        }
+      }
+    }
+  }
+  
+  .requirements {
+    p a {
+      &:link {
+        color: $color-5;
+        // text-decoration: none;
+      }
+      &:visited {
+        color: lighten($color-2, 10%);
+        text-decoration: none;
+      }
+      &:hover {
+        color: $color-1;
+        text-decoration: none;
+      }
+      &:active {
+        color: $alert;
+        text-decoration: none;
+      }
+    }
+  }
+  p a {
+    &:link {
+      color: $color-2;
+      // text-decoration: none;
+    }
+    &:visited {
+      color: lighten($color-2, 10%);
+      text-decoration: none;
+    }
+    &:hover {
+      color: $color-1;
+      text-decoration: none;
+    }
+    &:active {
+      color: $alert;
+      text-decoration: none;
+    }
+  }
+  footer  {
+    /* main navigation background color - full screen on small devices */
+    
+    font-family: $primary-font;
+    
+    height: 80px;
+    width: 100%;
+   
+  
+    a {
+      display: block;
+      border: $color-5 solid 2px;
+      //background: $color-2;
+      color: $color-5;
+      margin: auto;
+      padding: 1em;
+      
+    }
+  
+    @include MQ(M) {
+       a {
+        color: lighten($color-1, 40%);
+        padding: 2em 5em;
+  
+        &.selected {
+          color: $color-5;
+          box-shadow: 0 2px 0 $color-1;
+        }
+  
+        &:hover {
+          color: $color-5;
+        }
+      }
+    }
+  }
