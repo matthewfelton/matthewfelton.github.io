@@ -5,7 +5,7 @@ body {
     text-align: center;
 }
 ul {
-    align-items: center;
+    margin: auto;
 }
 li {
     text-align: left;
