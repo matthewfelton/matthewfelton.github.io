@@ -21,12 +21,83 @@
     <main>
         <h2>Week 02 Notes</h2>
         <h3>Questions</h3>
-        <p></p>
+        <p>Is it considered better practice to use this, or to target things by their name?<br/>
+        Can the object portions of javascript be similiar to objects in other languages?</p>
         <hr/>
         <h3>Notes</h3>
         <ul>
-            
-            
+            <li>Functions that are stored in object properties are called “methods”., Methods allow objects to “act” like object.doSomething().,  Short hand method can be example: user = { sayHi(){alert("hello");}};</li>
+            <li>the value of this is the object “before dot”, the one used to call the method example : alert(this.name); = alert(user.name);<br/>
+                unreliable. If we decide to copy user to another variable, e.g. admin = user and overwrite user with something else, then it will access the wrong object.<br/>
+                If we used this.name instead of user.name inside the alert, then the code would work.</li>
+            <li>An object in JavaScript is a self-contained set of related values and functions.</li>
+            <li>object example: const superman = {
+                name: 'Superman',
+                'real name': 'Clark Kent',
+                height: 75,
+                weight: 235,
+                hero: true,
+                villain: false,
+                allies: ['Batman','Supergirl','Superboy'],
+                fly() {
+                    return 'Up, up and away!';
+                }
+            };</li>
+            <li>nested example: const jla = {
+                superman: { realName: 'Clark Kent' },
+                batman: { realName: 'Bruce Wayne' },
+                wonderWoman: { realName: 'Diana Prince" },
+                flash: { realName: 'Barry Allen' },
+                aquaman: { realName: 'Arthur Curry' },
+            }</li>
+            <li>quiz example:<br/> // Set the questions
+                const quiz = [
+                    ["What is Superman's real name?","Clark Kent"],
+                    ["What is Wonderwoman's real name?","Dianna Prince"],
+                    ["What is Batman's real name?","Bruce Wayne"]
+                  ];<br/>
+                
+                function start(quiz){
+                  // initialize score
+                   let score = 0;<br/>
+                
+                  // main game loop
+                  for(const [question,answer] of quiz){
+                    const response = ask(question);
+                    check(response,answer);
+                  }
+                  // end of main game loop
+                <br/>
+                  gameOver();
+                
+                  // function declarations
+                  function ask(question){
+                    return prompt(question);
+                  }<br/>
+                
+                  function check(response,answer){
+                    // check if answer is correct
+                    if(response === answer){
+                      alert('Correct!');
+                      // increase score by 1
+                      score++;
+                    } else {
+                      alert(`Wrong! The correct answer was ${answer}`);
+                    }
+                  } <br/>
+                
+                  function gameOver(){
+                    // At the end of the game, report the player's score
+                    alert(`Game Over, you scored ${score} point${score !== 1 ? 's' : ''}`);
+                  }
+                }<br/>
+                
+                start(quiz);
+                </li>
+                <li>The Document Object Model, or DOM for short, represents an HTML document as a network of connected nodes that form a tree-like structure.</li>
+            <li>DOM is not actually part of JavaScript, it is a language agnostic. <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/6">site point link for more review.</a></li>
+            <li>onclick is a event handler for inline, </li>
+            <li>example of event listener: addEventListener('keypress', (event) => console.log(`You pressed the ${event.key} character`));</li>
         </ul>
         <hr/>
         <h3>team activity</h3>
