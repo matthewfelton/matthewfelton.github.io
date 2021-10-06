@@ -11,6 +11,10 @@ const links = [
     {
         label: "Week 03 Notes" ,
         url: "wdd330/week03/"
+    } ,
+    {
+        label: "Week 04 Notes" ,
+        url: "wdd330/week04/"
     }
 ]
 //select the container for to deposit array label
