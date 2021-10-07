@@ -20,6 +20,7 @@ let circleTurn;
 startGame()
 
 restartButton.addEventListener('click', startGame);
+restartButton.addEventListener('touchend', startGame);
 
 function startGame() {
   circleTurn = false
@@ -27,7 +28,9 @@ function startGame() {
     cell.classList.remove(X_CLASS)
     cell.classList.remove(CIRCLE_CLASS)
     cell.removeEventListener('click', handleClick)
+    cell.removeEventListener('touchend', handleClick)
     cell.addEventListener('click', handleClick, { once: true })
+    cell.addEventListener('touchend', handleClick, { once: true })
   })
   setBoardHoverClass()
   winningMessageElement.classList.remove('show')
