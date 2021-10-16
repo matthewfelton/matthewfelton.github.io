@@ -21,13 +21,41 @@
     <main>
         <h2>Week 05 Notes</h2>
         <h3>Questions</h3>
-        <p> </p>
+        <p>With a stack trace are we looking for the start of the problem or the root of the problem? Example are we looking for function one or unicorn
+
+        </p>
         <hr/>
         <h3>Notes</h3>
         <ul>
-          
+          <li>function three(){ unicorn(); }<br/>
+            function two(){ three(); }<br/>
+            function one(){ two(); }<br/>
+            one();<br/>
+            
+            << index.html:13 Uncaught ReferenceError: unicorn is not defined<br/>
+                at three (index.html:13)<br/>
+                at two (index.html:17)<br/>
+                at one (index.html:21)<br/>
+                at index.html:24`</li>
+        <li>ECMAScript 5 introduced a strict mode that produces more exceptions and warnings and prohibits the use of some deprecated features. This is due to the fact that strict mode considers coding practices that were previously accepted as just being 'poor style' as actual errors.</li>
+        <li>trict mode simply requires the following string to be added to the first line of a JavaScript file:
 
-
+           <br/>
+            'use strict';
+        <br/>You can even use strict mode on a per-function basis by adding the line inside a function. Strict mode will then only be applied to anything inside that function:</li>
+        <li>function amIOldEnough(age){<br/>
+            console.log(age);<br/>
+                if (age < 12) {<br/>
+                console.log(`In the if with ${age}`);<br/>
+                return 'No, sorry.';<br/>
+                } else if (age < 18) {<br/>
+                console.log(`In the else-if with ${age}`);<br/>
+                return 'Only if you are accompanied by an adult.';<br/>
+                } else {<br/>
+                console.log(`In the else with ${age}`);<br/>
+                return 'Yep, come on in!';<br/>
+            }
+        }</li>
 
         </ul>
         <hr/>
