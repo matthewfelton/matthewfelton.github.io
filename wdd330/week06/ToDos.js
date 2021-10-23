@@ -15,6 +15,7 @@ const updateTodoView = () => {
         //creates a li templete for todo list output and assigns done or blank based on true or false of completed
         todoList.innerHTML += `<li class="todo_card ${e.completed ? "done" : ""}" id="${e.id}">
             <input type="checkbox" id="${e.id}check"/>
+            <label></label>
             <h3 class="todo_title">${e.content}</h3>
             <button class="remove" id="delete${e.id}"> 
                 &cross;

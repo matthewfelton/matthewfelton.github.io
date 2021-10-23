@@ -50,11 +50,65 @@ main {
 }
 
 .todo_card input {
-    width: 2rem;
+    width: 2.5rem;
     height: 2rem;
     border-radius: 50%;
     cursor: pointer;
+
 }
+
+.todo_card input[type="checkbox"] {
+    opacity: 0;
+    z-index: 1;
+}
+
+.todo_card label::before,
+.todo_card label::after {
+    position: absolute;
+    content: "";
+
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+.todo_card label::before{
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    border-radius: 50%;
+    left: 17px;
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+    top: 10px;
+}
+
+.todo_card label::after {
+    height: 12px;
+    width: 18px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    color: white;
+    transform: rotate(-45deg);
+    
+    left: 22px;
+    top: 16px;
+}
+
+/*Hide the checkmark by default*/
+.todo_card input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.todo_card input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+/*Unhide on the checked state*/
+.todo_card input[type="checkbox"]:checked + label::before {
+    background-color: #039313;
+}
+
+
 
 .todo_card h3 {
     font-size: 1.6rem;
@@ -119,9 +173,9 @@ main {
 }
 
 .add_todo {
-   display: grid;
-   grid-template-columns: auto 60px;
-   grid-gap: 5px;
+    display: grid;
+    grid-template-columns: auto 60px;
+    grid-gap: 5px;
 }
 
 #todo_input {
