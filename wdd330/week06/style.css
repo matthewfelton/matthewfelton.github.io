@@ -118,7 +118,7 @@ main {
 }
 
 .todo_card button {
-    width: 2.5rem;
+    width: 2rem;
     height: 2rem;
     border: none;
     box-shadow: 0 0 0 2px #A60701;
@@ -189,6 +189,7 @@ main {
     height: 60px;
     width: 60px;
     font-size: 2rem;
+    align-content: center;
     border: none;
     border-radius: 50%;
     background-color: #3A373B;
