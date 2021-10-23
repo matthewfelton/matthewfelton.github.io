@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+h1, h3, p {
+    font-family: 'Cormorant Garamond', serif; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+hr {
+    max-width: 75%;
+    border-style: solid;
+    margin: -8% auto 0 auto;
+}
+
+body {
+    margin: 4%;
+    background-color: #6A4E73;
+}
+main {
+    margin: 0;
+    max-width: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #6A4E73;
+}
+
+.todo_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.todo_card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #FF9793;
+    border-radius: 1rem;
+    width: 320px;
+}
+
+.todo_card input {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.todo_card h3 {
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    width: 100%;
+    
+}
+
+.todo_card button {
+    width: 2.5rem;
+    height: 2rem;
+    border: none;
+    box-shadow: 0 0 0 2px #A60701;
+    background-color: #A60701;
+    color: white;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.done {
+    background-color: #A2FF9C;
+}
+
+.done h3 {
+    text-decoration: line-through;
+}
+
+#task-list-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: lightblue;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+    height: 39px;
+}
+
+#task-list-footer button{
+    background-color: lightblue;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+    padding: 12px;
+}
+
+#task-list-footer button:hover {
+    background-color: #075CC4;
+    color: white;
+}
+
+#tasks-left {
+    margin: 0 auto 0 20px;
+    line-height: .5px;
+}
+
+.add_todo {
+   display: grid;
+   grid-template-columns: auto 60px;
+   grid-gap: 5px;
+}
+
+#todo_input {
+    height: 35px;
+    border-radius: .7rem;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.todo_submit {
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #3A373B;
+    color: white;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: #6A4E73;
+    }
+}
