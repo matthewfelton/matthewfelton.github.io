@@ -1,24 +1,49 @@
-//import local stored data object
+// import local stored data object
 import { Data } from "./ls.js";
-//export utility functions
+const store = new Data();
+// export utility functions
 export class Utility {
-    todoList = []; //defines a blank array
-    //generates items to array
+    // generates items to array
     constructor() {
-        this.todoList = [];
+        this.todoList = store.get('toDoList');
+        if (!this.todoList) {
+            this.todoList = [];
+        }
+        this.displayList = this.todoList;
     }
     
     addTodo(todoContent) {
-        this.todoList.push(new Data(this.todoList.length, todoContent));
-    }
+        this.todoList.push(
+            {
+                id: Date.now(),
+                content: todoContent,
+                completed: false
+            }
+        );
+        store.set('toDoList', this.todoList);
+    }                                      
     
-    removeTodo(id) {
-        this.todoList = this.todoList.filter((data) => data.id !== id);
+    removeTodo(i) {
+        this.todoList.splice(i, 1);
+        store.set('toDoList', this.todoList);
     }
-    updateTodo(id) {
-        this.todoList = this.todoList.map((data) => {
-            if (data.id === id) data.toggleCompleted();
-            return data;
-        });
+
+    updateTodo(i) {
+        this.todoList[i] = {
+            id: this.todoList[i].id,
+            content: this.todoList[i].content,
+            completed: !this.todoList[i].completed,
+        }
+        store.set('toDoList', this.todoList);
+    }
+
+    updateDisplayList(view) {
+        if (view === 'all') {
+            this.displayList = this.todoList;
+        } else {
+            // Set the display list to the elements that have the completed value that is the same as
+            // the view value. true/false
+            this.displayList = this.todoList.filter((element) =>  element.completed === view);
+        }
     }
 }
