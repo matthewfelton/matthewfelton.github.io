@@ -7,12 +7,14 @@ h1, h3, p {
 h1 {
     text-align: center;
     font-size: 2.8rem;
+    color: white;
 }
 
 hr {
     max-width: 75%;
     border-style: solid;
     margin: -8% auto 0 auto;
+    color: white;
 }
 
 body {
@@ -107,7 +109,7 @@ main {
 }
 
 #task-list-footer button:hover {
-    background-color: #075CC4;
+    background-color: #6B2E80;
     color: white;
 }
 
