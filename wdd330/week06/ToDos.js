@@ -18,7 +18,7 @@ const updateTodoView = () => {
             <label></label>
             <h3 class="todo_title">${e.content}</h3>
             <button class="remove" id="delete${e.id}"> 
-                &cross;
+                X
             </button>
         </li>`;
     });
