@@ -7,7 +7,6 @@ const taskTodo = document.getElementById("tasks-left");
 
 const updateTodoView = () => {
     todoList.innerHTML = "";
-    let tasksLeftToDo = 0;
     //e = element i = index
     todoUtility.displayList.forEach((e, i) => {
         //creates a li templete for todo list output
