@@ -21,7 +21,7 @@ export class Utility {
             {
                 id: Date.now(), // Assigns Date.now number as id of object
                 content: todoContent, // sets function's content string to content of object
-                completed: false // Assignes default false booglan to completed object
+                completed: false // Assignes default false boolean to completed object
             }
         );
         // Takes todoList array and sents it to set function in ls.js to store in localstorage with key 'toDoList' to update localStorage 
@@ -45,16 +45,24 @@ export class Utility {
         // Takes todoList array and sents it to set function in ls.js to store in localstorage with key 'toDoList' to update localStorage 
         store.set('toDoList', this.todoList);
     }
+    showList = [];
     // Updates the displayList array to only display view value list
     updateDisplayList(view) {
         // Checks view for all value 
         if (view === 'all') {
             // Displays all if value is all
             this.displayList = this.todoList;
-        } else {
+        } else if (view === true){
             // Set the display list to the elements that have the completed value that is the same as
             // the view value. true/false
-            this.displayList = this.todoList.filter((element) =>  element.completed === view);
+            this.displayList = "";
+            this.trueList = this.todoList;
+        } else {
+            this.displayList = "";
+            this.trueList = "";
+            this.falseList = this.todoList;
         }
-    }
+    
+    };
+        
 }
