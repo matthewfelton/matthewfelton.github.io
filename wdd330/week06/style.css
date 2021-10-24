@@ -158,8 +158,8 @@ main {
     border-bottom: none;
     border-right: none;
     cursor: pointer;
-    margin: 0 10px 0 0;
-    padding: 12px;
+    padding: 8.5px;
+    border-radius: inherit;
 }
 
 #task-list-footer button:hover {
