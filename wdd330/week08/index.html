@@ -21,14 +21,38 @@
     <main>
         <h2>Week 07 Notes</h2>
         <h3>Questions</h3>
-        <p> 
+        <p> How hard would it be to make your own api system out of a database?
 
         </p>
         <hr/>
         <h3>Notes</h3>
         <ul>
-            <li></li>
+            <li>The first API we’ll cover is geolocation. Geolocation allows your visitors to share their current location. With that location information, you can display it on a map using a maps library such as Google Maps or the MapQuest API.</li>
+            <li>These different tasks are controlled through the three methods currently available in the Geolocation API:
+                <br/>
+                getCurrentPosition<br/>
+                <br/>
+                watchPosition<br/>
+                <br/>
+                clearPosition</li>
+                <li>function determineLocation() {<br/>
+                    if (Modernizr.geolocation) {<br/>
+                    navigator.geolocation.getCurrentPosition(displayOnMap);<br/>
+                    } else {<br/>
+                    // geolocation is not supported in this browser<br/>
+                    }<br/>
+                }<br/></li>
+
+
         </ul>
+        <article class="ad-ad4">
+            <div id="mapDiv">
+            <h1>Where in the world are you?</h1>
+            <form id="geoForm">
+                <input type="button" id="geobutton" value="Tell us!">
+            </form>
+            </div>
+        </article>
         <hr/>
         <h3>team activity</h3>
         <a href="teamassignment.html">Team Assignment</a>
@@ -36,7 +60,10 @@
 
     </main>
     <footer><a href="https://matthewfelton.github.io/">Return to the Hub</a></footer>
-    <script src="#"></script>
+    <script src="api.js"></script>
+    <!-- google maps API-->
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script>
 </body>
 
 </html>

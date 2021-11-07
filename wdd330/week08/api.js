@@ -84,3 +84,28 @@ function getJSON(url) {
     });
   }
   showShips();
+
+
+var geobutton = document.getElementById('geobutton');
+geobutton.addEventListener('click', determineLocation);
+
+function displayOnMap(position) {
+  var latitude = position.coords.latitude;
+  var longitude = position.coords.longitude;
+  
+  // Let’s use Google Maps to display the location 
+  var myOptions = {
+  zoom: 14,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  
+  var map = new google.maps.Map(document.getElementById("geoForm"), myOptions);
+  
+  var initialLocation = new google.maps.LatLng(latitude, longitude);
+  
+  var marker = new google.maps.Marker({
+  position: initialLocation,
+  map: map,
+  title: "Hello World!"
+  });
+}
