@@ -21,13 +21,33 @@
     <main>
         <h2>Week 09 Notes</h2>
         <h3>Questions</h3>
-        <p> 
+        <p> Can you affect a page to use and api and save local storage without issues with desync?
 
         </p>
         <hr/>
         <h3>Notes</h3>
         <ul>
-            <li></li>
+            <li>Web Storage API has some crucial differences with cookies:<br/>
+
+                Information stored is not shared with the server on every request.<br/>
+                
+                Information is available in multiple windows of the browser (but only if the domain is the same).<br/>
+                
+                Storage capacity limit is much larger than the 4KB limit for cookies ( There is no actual limit in the specification, but most browsers have a limit set at 5GB per domain.).<br/>
+                
+                Any data stored does not automatically expire as it does with cookies. This potentially makes cookies a better choice for something like showing a popup once a day.</li>
+            <li>Will change the background color of a page<br/>
+                const btn = document.getElementById('rainbow');<br/>
+
+                const rainbow = ['red','orange','yellow','green','blue','rebeccapurple','violet'];<br/>
+
+                function change() {      <br/>
+                    document.body.style.background = rainbow[Math.floor(7*<br/>
+                    Math.random())];<br/>
+                } <br/>
+                btn.addEventListener('click', change) <br/>
+            </li>
+
 
         </ul>
         
