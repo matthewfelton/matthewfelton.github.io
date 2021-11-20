@@ -21,16 +21,96 @@
     <main>
         <h2>Week 10 Notes</h2>
         <h3>Questions</h3>
-        <p> 
+        <p> If the built in validation is less customizable should we consider both when looking at different situations?
 
         </p>
         <hr/>
         <h3>Notes</h3>
         <ul>
-            <li>
+            <li><form>
+                <p>
+                  <fieldset>
+                    <legend>Do you have a driver's license?<abbr title="This field is mandatory" aria-label="required">*</abbr></legend>
+                    <!-- While only one radio button in a same-named group can be selected at a time,
+                         and therefore only one radio button in a same-named group having the "required"
+                         attribute suffices in making a selection a requirement -->
+                    <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+                    <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+                  </fieldset>
+                </p>
+                <p>
+                  <label for="n1">How old are you?</label>
+                  <!-- The pattern attribute can act as a fallback for browsers which
+                       don't implement the number input type but support the pattern attribute.
+                       Please note that browsers that support the pattern attribute will make it
+                       fail silently when used with a number field.
+                       Its usage here acts only as a fallback -->
+                  <input type="number" min="12" max="120" step="1" id="n1" name="age"
+                         pattern="\d+">
+                </p>
+                <p>
+                  <label for="t1">What's your favorite fruit?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+                  <input type="text" id="t1" name="fruit" list="l1" required
+                         pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+                  <datalist id="l1">
+                    <option>Banana</option>
+                    <option>Cherry</option>
+                    <option>Apple</option>
+                    <option>Strawberry</option>
+                    <option>Lemon</option>
+                    <option>Orange</option>
+                  </datalist>
+                </p>
+                <p>
+                  <label for="t2">What's your e-mail address?</label>
+                  <input type="email" id="t2" name="email">
+                </p>
+                <p>
+                  <label for="t3">Leave a short message</label>
+                  <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+                </p>
+                <p>
+                  <button>Submit</button>
+                </p>
+              </form>
             </li>
+            <li>const email = document.getElementById("mail");<br/>
 
+                email.addEventListener("input", function (event) {<br/>
+                  if (email.validity.typeMismatch) {<br/>
+                    email.setCustomValidity("I am expecting an e-mail address!");<br/>
+                  } else {<br/>
+                    email.setCustomValidity("");<br/>
+                  }
+                });
+            </li>
+            <li>The fetch specification differs from jQuery.ajax() in the following significant ways:
 
+            The Promise returned from fetch() won’t reject on HTTP error status even if the response <br/>
+            is an HTTP 404 or 500. Instead, as soon as the server responds with headers, the Promise <br/>
+            will resolve normally (with the ok property of the response set to false if the response<br/>
+             isn’t in the range 200–299), and it will only reject on network failure or if anything<br/>
+              prevented the request from completing.
+            </li>
+            <li>const formData = new FormData();<br/>
+                const fileField = document.querySelector('input[type="file"]');<br/>
+                
+                formData.append('username', 'abc123');<br/>
+                formData.append('avatar', fileField.files[0]);<br/>
+                
+                fetch('https://example.com/profile/avatar', {<br/>
+                  method: 'PUT',<br/>
+                  body: formData<br/>
+                })<br/>
+                .then(response => response.json())<br/>
+                .then(result => {<br/>
+                  console.log('Success:', result);<br/>
+                })<br/>
+                .catch(error => {<br/>
+                  console.error('Error:', error);<br/>
+                });
+
+            </li>
         </ul>
         
         <hr/>
