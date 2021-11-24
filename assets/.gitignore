@@ -12,3 +12,12 @@ node_modules
 
 # Ignore SASS config files
 .sass-cache
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
