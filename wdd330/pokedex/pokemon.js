@@ -24,6 +24,8 @@ export default class pokemonjs {
                     name: data.name, 
                     image: data.sprites["front_default"],
                     simage: data.sprites["front_shiny"],
+                    bimage: data.sprites["back_default"],
+                    sbimage: data.sprites["back_shiny"],
                     collected: false,
                     typeOne: data.types[0].type.name,
                     typeTwo: data.types[1] ? data.types[1].type.name : '',

@@ -5,7 +5,7 @@ const ls = new localStorage();
 const pokemon = new pokemonjs();
 const monList = document.querySelector(".mon_list")
 let fullPokemonList = {};
-let currentList = 'full';
+
 let bottomNumber = 12;
 
 pokemon.getInitialPokemonList().then((res) => {
@@ -29,7 +29,16 @@ function addEventListenerToPokemon(arr) {
             .getElementById(`${fullPokemonList[e].id}check`)
             .addEventListener("click", () => {
                 fullPokemonList[e].collected = !fullPokemonList[e].collected;
-                ls.set('pokemonList', fullPokemonList);
+                ls.set('pokemonList', fullPokemonList)
+                
+                let change = document.getElementById(`${fullPokemonList[e].id}`);
+                if (fullPokemonList[e].collected == true ){
+                    change.innerHTML = `<p class="replace">Congrats on your new collected ${fullPokemonList[e].name} keep it up!</p>
+                                        <img class="caught" src="images/caught.png"></img>`
+                } else {
+                    change.innerHTML = `<p class="replace gone">Oh dear Professor Oaks would of liked your ${fullPokemonList[e].name} too</p>
+                                        <img class="leave" src='${fullPokemonList[e].shiny ? fullPokemonList[e].sbimage : fullPokemonList[e].bimage}'></img>`
+                }
         });
         document
             .getElementById(`${fullPokemonList[e].id}shiny`)
@@ -47,14 +56,16 @@ function createList (arr) {
     arr.forEach((e) => {
         monList.innerHTML += 
         `<li class="card" id="${fullPokemonList[e].id}">
+            <h1>#${fullPokemonList[e].id}</h1>
             <input type="checkbox" class="checkOne" id="${fullPokemonList[e].id}check"></input>
-            <img class="ball_icon"src="images/pokeball.png"></img>
+            <img class="ball_icon"src="images/pokeball.png" loading="lazy"></img>
             <input type="checkbox" class="checkTwo" id="${fullPokemonList[e].id}shiny"></input>
-            <img class="shiny_icon"src="images/shiny.png"></img>
+            <img class="shiny_icon"src="images/shiny.png" loading="lazy"></img>
             <h2>${fullPokemonList[e].name[0].toUpperCase()}${fullPokemonList[e].name.slice(1)}</h2>
             <img class="typeOne" src="images/${fullPokemonList[e].typeOne}.png" loading="lazy"/></img>
             ${fullPokemonList[e].typeTwo ? `<img class='typeTwo' src='images/${fullPokemonList[e].typeTwo}.png' loading='lazy'/></img>` : ''}
-            <img class="sprites" id="${fullPokemonList[e].id}image" src='${fullPokemonList[e].shiny ? fullPokemonList[e].simage : fullPokemonList[e].image}' loading="lazy"></img>
+            <img class="sprites " id="${fullPokemonList[e].id}image" src='${fullPokemonList[e].shiny ? fullPokemonList[e].simage : fullPokemonList[e].image}' 
+            loading="lazy"'></img>
         </li>
         `
     });
@@ -62,10 +73,12 @@ function createList (arr) {
 
 function allButton() {
     monList.innerHTML = "";
-    const displayList = Object.keys(fullPokemonList);
+    const displayList = Object.keys(fullPokemonList).slice(0, bottomNumber);
+    document.getElementById("btnMind").classList.add("full");
+    document.getElementById("btnMind").classList.remove("collected");
+    document.getElementById("btnMind").classList.remove("unCollected");
     createList(displayList);
     addEventListenerToPokemon(displayList);
-    currentList = 'full';
 }
 document.getElementById("allBtn").addEventListener("click", () => {
     allButton();
@@ -73,10 +86,13 @@ document.getElementById("allBtn").addEventListener("click", () => {
 
 function collectedButton() {
     monList.innerHTML = "";
-    const displayList = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected);
+    const displayList = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).slice(0, bottomNumber);
+    document.getElementById("btnMind").classList.remove("full");
+    document.getElementById("btnMind").classList.add("collected");
+    document.getElementById("btnMind").classList.remove("unCollected");
     createList(displayList);
     addEventListenerToPokemon(displayList);
-    currentList = 'collected';
+    
 }
 document.getElementById("collectedBtn").addEventListener("click", () => {
     collectedButton();
@@ -84,25 +100,34 @@ document.getElementById("collectedBtn").addEventListener("click", () => {
 
 function uncollectedButton() {
     monList.innerHTML = "";
-    const displayList = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected);
+    const displayList = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).slice(0, bottomNumber);
+    document.getElementById("btnMind").classList.remove("full");
+    document.getElementById("btnMind").classList.remove("collected");
+    document.getElementById("btnMind").classList.add("unCollected");
     createList(displayList);
     addEventListenerToPokemon(displayList);
-    currentList = 'unCollected';
 }
 document.getElementById("uncollectedBtn").addEventListener("click", () => {
     uncollectedButton();
 })
 
+
+
+
+    
+
+
+
 document.getElementById("refresh").addEventListener("click", () => {
     monList.innerHTML = "";
-    switch (currentList) {
-        case 'collected':
+    switch (btnMind.className) {
+        case btnMind.className = 'mon_list collected':
             collectedButton();
             break;
-        case 'unCollected':
+        case btnMind.className = 'mon_list unCollected':
             uncollectedButton();
             break;
-        case 'full':
+        case btnMind.className = 'mon_list full':
         default:
             allButton();
             break;
@@ -117,9 +142,33 @@ document.getElementById("next").addEventListener("click", () => {
         orgBottomNumber = 1118 - 12;
         bottomNumber = 1118;
     }
-    const displayList = Object.keys(fullPokemonList).slice(orgBottomNumber, bottomNumber);
-    createList(displayList);
-    addEventListenerToPokemon(displayList);
+    if (btnMind.className == "mon_list full") {
+        const displayList = Object.keys(fullPokemonList).slice(orgBottomNumber, bottomNumber)
+        createList(displayList);
+        addEventListenerToPokemon(displayList);
+    } else if (btnMind.className == "mon_list collected") {
+        if (bottomNumber > Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).length) {
+            orgBottomNumber = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).length - 12;
+            bottomNumber = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).length;
+            if (orgBottomNumber < 0) {
+                orgBottomNumber = 0;
+            }
+        }
+        const displayList = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).slice(orgBottomNumber, bottomNumber);
+        createList(displayList);
+        addEventListenerToPokemon(displayList);
+    } else {
+        if (bottomNumber > Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).length) {
+            orgBottomNumber = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).length - 12;
+            bottomNumber = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).length;
+            if (orgBottomNumber < 0) {
+                orgBottomNumber = 0;
+            }
+        }
+        const displayList = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).slice(orgBottomNumber, bottomNumber);
+        createList(displayList);
+        addEventListenerToPokemon(displayList);
+    }
 })
 
 document.getElementById("prev").addEventListener("click", () => {
@@ -128,9 +177,38 @@ document.getElementById("prev").addEventListener("click", () => {
     bottomNumber = bottomNumber - 12;
     if (bottomNumber <= 12) {
         bottomNumber = 12;
-        orgBottomNumber = 0;
+        if (orgBottomNumber < 0) {
+            orgBottomNumber = 0;
+        }
     }
-    const displayList = Object.keys(fullPokemonList).slice(orgBottomNumber, bottomNumber);
-    createList(displayList);
-    addEventListenerToPokemon(displayList);
+    if (btnMind.className == "mon_list full") {
+        const displayList = Object.keys(fullPokemonList).slice(orgBottomNumber, bottomNumber)
+        createList(displayList);
+        addEventListenerToPokemon(displayList);
+    } else if (btnMind.className == "mon_list collected") {
+        if (bottomNumber > Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).length) {
+            orgBottomNumber = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).length - 12;
+            bottomNumber = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).length;
+            if (orgBottomNumber < 0) {
+                orgBottomNumber = 0;
+            }
+            
+        }
+        const displayList = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).slice(orgBottomNumber, bottomNumber);
+        createList(displayList);
+        addEventListenerToPokemon(displayList);
+    } else {
+        if (bottomNumber > Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).length) {
+            orgBottomNumber = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).length + 12;
+            bottomNumber = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).length;
+            if (orgBottomNumber < 0) {
+                orgBottomNumber = 0;
+            }
+        }
+        const displayList = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).slice(orgBottomNumber, bottomNumber);
+        createList(displayList);
+        addEventListenerToPokemon(displayList);
+    }
+    console.log("1: ", orgBottomNumber);
+            console.log("2: ",bottomNumber);
 })

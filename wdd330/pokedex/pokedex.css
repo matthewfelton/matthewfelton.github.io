@@ -54,18 +54,23 @@ header p {
     padding-left: 22px;
     padding-right: 22px;
 }
-ul {
-    list-style: none;
+main {
     display: grid;
     grid-template-columns: 1fr 250px 1fr;
 }
+ul {
+    grid-column: 2/3;
+    list-style: none;
+    justify-self: right;
+    align-self: center;
+}
 
 .card {
-    grid-column: 2/3;
     display: grid;
     grid-template-columns: 50px 50px 50px 50px 50px;
     grid-template-rows: 50px 50px 50px 50px 50px;
-    border: black solid 2px;
+    border: crimson solid 1px;
+    background-color: gray;
     border-radius: 50%;
     height:250px;
     width: 250px;
@@ -89,15 +94,7 @@ ul {
     height: 23.4px;
     width: 62.4px;
 }
-.card .sprites {
-    grid-column: 2/5;
-    grid-row: 2/5;
-    justify-self: center;
-    align-self: center;
-    padding-top: 20px;
-    height: auto;
-    width: 100px;
-}
+
 .card input[type="checkbox"] {
     opacity: 0;
     z-index: 1;
@@ -148,6 +145,27 @@ ul {
     border-radius: 50%;
 }
 
+.uncollected {
+    filter: brightness(0);
+}
+
+.sprites {
+    grid-column: 2/5;
+    grid-row: 2/5;
+    justify-self: center;
+    align-self: center;
+    padding-top: 20px;
+    height: auto;
+    width: 100px;
+}
+.card h1 {
+    text-align: center;
+    grid-column: 2/5;
+    grid-row: 1/2;
+    font-size: 0.6em;
+    padding-top: 0px;
+    
+}
 .card h2 {
     text-align: center;
     grid-column: 2/5;
@@ -156,6 +174,34 @@ ul {
     padding-top: 20px;
     
 }
+.card .caught {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    height: auto;
+    filter: brightness(0.5);
+    width: 250px;
+    justify-self: center;
+}
+.card .replace {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    z-index: 1;
+    padding-top: 20px;
+    text-shadow: black  2px 2px;
+    width: 150px;
+    font-size: .8em;
+    text-align: center;
+    color: white;
+}
+.card .gone {
+    font-size: 1.2em;
+}
+.card .leave {
+    grid-column: 2/5;
+    grid-row: 4/6;
+    justify-self: center;
+}
+
 
 
 
