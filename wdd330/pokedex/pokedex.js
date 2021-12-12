@@ -73,7 +73,7 @@ function createList (arr) {
 
 function allButton() {
     monList.innerHTML = "";
-    const displayList = Object.keys(fullPokemonList).slice(0, bottomNumber);
+    const displayList = Object.keys(fullPokemonList).slice(0, 12);
     document.getElementById("btnMind").classList.add("full");
     document.getElementById("btnMind").classList.remove("collected");
     document.getElementById("btnMind").classList.remove("unCollected");
@@ -86,7 +86,7 @@ document.getElementById("allBtn").addEventListener("click", () => {
 
 function collectedButton() {
     monList.innerHTML = "";
-    const displayList = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).slice(0, bottomNumber);
+    const displayList = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).slice(0, 12);
     document.getElementById("btnMind").classList.remove("full");
     document.getElementById("btnMind").classList.add("collected");
     document.getElementById("btnMind").classList.remove("unCollected");
@@ -100,7 +100,7 @@ document.getElementById("collectedBtn").addEventListener("click", () => {
 
 function uncollectedButton() {
     monList.innerHTML = "";
-    const displayList = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).slice(0, bottomNumber);
+    const displayList = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).slice(0, 12);
     document.getElementById("btnMind").classList.remove("full");
     document.getElementById("btnMind").classList.remove("collected");
     document.getElementById("btnMind").classList.add("unCollected");
@@ -186,8 +186,7 @@ document.getElementById("prev").addEventListener("click", () => {
             bottomNumber = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).length;
             if (orgBottomNumber < 0) {
                 orgBottomNumber = 0;
-            }
-            
+            } 
         }
         const displayList = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).slice(orgBottomNumber, bottomNumber);
         createList(displayList);
@@ -204,6 +203,4 @@ document.getElementById("prev").addEventListener("click", () => {
         createList(displayList);
         addEventListenerToPokemon(displayList);
     }
-    console.log("1: ", orgBottomNumber);
-            console.log("2: ",bottomNumber);
 })
