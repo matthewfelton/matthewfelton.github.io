@@ -124,13 +124,12 @@ document.getElementById("next").addEventListener("click", () => {
 
 document.getElementById("prev").addEventListener("click", () => {
     monList.innerHTML = "";
-    let orgBottomNumber = bottomNumber;
-    bottomNumber -= 12;
-    if (bottomNumber <= 0) {
-        orgBottomNumber = 0 + 12;
-        bottomNumber = 0;
+    let orgBottomNumber = bottomNumber - 24;
+    bottomNumber = bottomNumber - 12;
+    if (bottomNumber <= 12) {
+        bottomNumber = 12;
+        orgBottomNumber = 0;
     }
-    
     const displayList = Object.keys(fullPokemonList).slice(orgBottomNumber, bottomNumber);
     createList(displayList);
     addEventListenerToPokemon(displayList);
