@@ -40,6 +40,11 @@ const links = [
         label: "Week 10 Notes" ,
         url: "wdd330/week10/"
     }
+    ,
+    {
+        label: "Final Project" ,
+        url: "wdd330/pokedex/"
+    }
 ]
 //select the container for to deposit array label
 const select = document.querySelector("#wdd330Container");
@@ -51,7 +56,7 @@ for (i = 0; i <= links.length; i++) {
 
     //assign id for link generation and text
     listItem.setAttribute("id","assign");
-    listItem.innerText = links[i].label + "; ";
+    listItem.innerText = links[i].label + ": ";
 
     //generate href tag
     let link = document.createElement("a");

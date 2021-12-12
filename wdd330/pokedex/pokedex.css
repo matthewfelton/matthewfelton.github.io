@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Press+Start+2P&display=swap');
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+}
+h1, h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+p {
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+header {
+    background-color: crimson;
+    padding-bottom: 5px;
+}
+header h1,header h2,header p {
+    margin: 0;
+    text-align: center;
+} 
+header h1,header h2 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 6px 6px black;
+    padding: 4%
+}
+header p {
+    color: white;
+    padding: 4%;
+    
+}
+.dex_header {
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.dex_header button {
+    font-family: 'Fuzzy Bubbles', cursive;
+    display: block;
+    color: white;
+    font-size: .8em;
+    background-color: black;
+    border: 1px white solid;
+    padding: 14px;
+}
+#allBtn{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.type {
+    height: 18px;
+    width: 48px;
+}
+
+
+.collected {
+    display: flex;
+}
+.uncollected {
+    display: flex;
+}

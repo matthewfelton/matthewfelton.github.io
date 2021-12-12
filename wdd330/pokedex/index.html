@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"
+        />
+        <title>Pokédex</title>
+        <meta name="description" content="an app to display pokemon for the user" />
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="pokedex.css" />
+        
+    </head>
+    <body>
+        <header>
+            <h1>Pokédex</h1>
+            <p>Pokémon provided by pokeapi.co</p>
+            <div class="dex_header">
+                <button id="allBtn">All</button>
+                <button id="collectedBtn">Collected</button>
+                <button id="uncollectedBtn">Uncollected</button>
+                <button id="refresh">Refresh List</button>
+            </div>
+        </header>
+        <main>
+            
+            
+            <ul class="mon_list"></ul>
+        </main>
+        <script src="pokedex.js" type="module"></script>
+    </body>
+</html>
