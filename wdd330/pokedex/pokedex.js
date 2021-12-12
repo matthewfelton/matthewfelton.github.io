@@ -56,7 +56,7 @@ function createList (arr) {
     arr.forEach((e) => {
         monList.innerHTML += 
         `<li class="card" id="${fullPokemonList[e].id}">
-            <h1>#${fullPokemonList[e].id}</h1>
+            <h1># ${fullPokemonList[e].id}</h1>
             <input type="checkbox" class="checkOne" id="${fullPokemonList[e].id}check"></input>
             <img class="ball_icon"src="images/pokeball.png" loading="lazy"></img>
             <input type="checkbox" class="checkTwo" id="${fullPokemonList[e].id}shiny"></input>
