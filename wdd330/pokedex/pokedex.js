@@ -33,10 +33,10 @@ function addEventListenerToPokemon(arr) {
                 
                 let change = document.getElementById(`${fullPokemonList[e].id}`);
                 if (fullPokemonList[e].collected == true ){
-                    change.innerHTML = `<p class="replace">Congrats on your new collected ${fullPokemonList[e].name} keep it up!</p>
+                    change.innerHTML = `<p class="replace">Congrats on your new collected ${fullPokemonList[e].shiny ? "Shiny" : ""} ${fullPokemonList[e].name[0].toUpperCase()}${fullPokemonList[e].name.slice(1)} keep it up!</p>
                                         <img class="caught" src="images/caught.png"></img>`
                 } else {
-                    change.innerHTML = `<p class="replace gone">Oh dear Professor Oaks would of liked your ${fullPokemonList[e].name} too</p>
+                    change.innerHTML = `<p class="replace gone">Oh dear Professor Oaks would of liked your ${fullPokemonList[e].shiny ? "Shiny" : ""} ${fullPokemonList[e].name[0].toUpperCase()}${fullPokemonList[e].name.slice(1)} too</p>
                                         <img class="leave" src='${fullPokemonList[e].shiny ? fullPokemonList[e].sbimage : fullPokemonList[e].bimage}'></img>`
                 }
         });
@@ -110,11 +110,6 @@ function uncollectedButton() {
 document.getElementById("uncollectedBtn").addEventListener("click", () => {
     uncollectedButton();
 })
-
-
-
-
-    
 
 
 
