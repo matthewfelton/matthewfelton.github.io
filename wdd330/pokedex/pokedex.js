@@ -8,7 +8,7 @@ const details = document.querySelector(".detail")
 let fullPokemonList = {};
 
 let bottomNumber = 12;
-
+// Grabs the first set of pokemon to allow for quicker page load.
 pokemon.getInitialPokemonList().then((res) => {
     monList.innerHTML = "";
     fullPokemonList = res;
@@ -17,13 +17,14 @@ pokemon.getInitialPokemonList().then((res) => {
     } else {
         monList.innerHTML = "ERROR: Pokémon have escaped Dex... Beware Jurassic Pokémon Park"
     }
+    //pulls the remaining pokemon after load
 }).finally((e) => {
     addEventListenerToPokemon(Object.keys(fullPokemonList).slice(0, bottomNumber));
     pokemon.getRestOfPokemon(fullPokemonList).then((res) => {
         fullPokemonList = res;
     });
 })
-
+// adds listeners to each checkbox in object
 function addEventListenerToPokemon(arr) {
     arr.forEach((e) => {
         document
@@ -52,7 +53,7 @@ function addEventListenerToPokemon(arr) {
         document.getElementById(`${fullPokemonList[e].id}shiny`).checked = fullPokemonList[e].shiny;
     });
 }
-
+// builds line item under monList
 function createList (arr) {
     arr.forEach((e) => {
         monList.innerHTML += 
@@ -71,7 +72,7 @@ function createList (arr) {
         `
     });
 }
-
+//sets class to all and filters accordingly
 function allButton() {
     monList.innerHTML = "";
     const displayList = Object.keys(fullPokemonList).slice(0, 12);
@@ -84,7 +85,7 @@ function allButton() {
 document.getElementById("allBtn").addEventListener("click", () => {
     allButton();
 })
-
+//sets class to collected and filters accordingly
 function collectedButton() {
     monList.innerHTML = "";
     const displayList = Object.keys(fullPokemonList).filter((e) => fullPokemonList[e].collected).slice(0, 12);
@@ -98,7 +99,7 @@ function collectedButton() {
 document.getElementById("collectedBtn").addEventListener("click", () => {
     collectedButton();
 })
-
+//sets class to uncollected and filters accordingly
 function uncollectedButton() {
     monList.innerHTML = "";
     const displayList = Object.keys(fullPokemonList).filter((e) => !fullPokemonList[e].collected).slice(0, 12);
@@ -113,7 +114,7 @@ document.getElementById("uncollectedBtn").addEventListener("click", () => {
 })
 
 
-
+// refreshes monList html based on present class
 document.getElementById("refresh").addEventListener("click", () => {
     monList.innerHTML = "";
     switch (btnMind.className) {
@@ -129,7 +130,7 @@ document.getElementById("refresh").addEventListener("click", () => {
             break;
     }
 })
-
+//lists for next button clicks and based on class filter and manuplates data to show proper list and amount
 document.getElementById("next").addEventListener("click", () => {
     monList.innerHTML = "";
     let orgBottomNumber = bottomNumber;
@@ -166,7 +167,7 @@ document.getElementById("next").addEventListener("click", () => {
         addEventListenerToPokemon(displayList);
     }
 })
-
+//lists for prev button clicks and based on class filter and manuplates data to show proper list and amount
 document.getElementById("prev").addEventListener("click", () => {
     monList.innerHTML = "";
     let orgBottomNumber = bottomNumber - 24;

@@ -6,7 +6,7 @@ let pokemonList = {};
 export default class pokemonjs {
     constructor() {
     }
-
+    // pulls first 150 pokemon from api
     getInitialPokemonList = async () => {
         const apiArray = [];
         let api = "";
@@ -19,6 +19,7 @@ export default class pokemonjs {
         return Promise.all(apiArray)
         .then((results) => {
             results.forEach((data) => {
+                // builds data from api into an pokemon's name object and contains them within the pokemonlist object
                 pokemonList[data.name] = {
                     id: data.id,
                     name: data.name, 
@@ -43,7 +44,7 @@ export default class pokemonjs {
             return pokemonList;
         });
     }
-
+    // pulls the remaining pokemon from api
     getRestOfPokemon = async (pokemonList) => {
         const savedPokemon = ls.get('pokemonList');
         const apiArray = [];
@@ -67,6 +68,7 @@ export default class pokemonjs {
         return Promise.all(apiArray)
         .then((results) => {
             results.forEach((data) => {
+                // builds data from api into an pokemon's name object and contains them within the pokemonlist object
                 pokemonList[data.name] = pokemonList[data.name] = {
                     id: data.id,
                     name: data.name, 
