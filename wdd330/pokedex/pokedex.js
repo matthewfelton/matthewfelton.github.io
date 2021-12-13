@@ -4,7 +4,6 @@ import { localStorage } from "./ls.js";
 const ls = new localStorage();
 const pokemon = new pokemonjs();
 const monList = document.querySelector(".mon_list")
-const details = document.querySelector(".detail")
 let fullPokemonList = {};
 
 let bottomNumber = 12;
