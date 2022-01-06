@@ -1,7 +1,7 @@
 //array for list generation
 const links = [
     {
-        label: "Week 06 ToDo List" ,
+        label: "ToDo List Project" ,
         url: "wdd330/week06/"
     } ,
     {
