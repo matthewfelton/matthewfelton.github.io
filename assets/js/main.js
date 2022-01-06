@@ -1,46 +1,9 @@
 //array for list generation
 const links = [
     {
-        label: "Week 01 Notes" ,
-        url: "wdd330/week01/"
-    } ,
-    {
-        label: "Week 02 Notes" ,
-        url: "wdd330/week02/"
-    } , 
-    {
-        label: "Week 03 Notes" ,
-        url: "wdd330/week03/"
-    } ,
-    {
-        label: "Week 04 Notes" ,
-        url: "wdd330/week04/"
-    } ,
-    {
-        label: "Week 05 Notes" ,
-        url: "wdd330/week05/"
-    } ,
-    {
         label: "Week 06 ToDo List" ,
         url: "wdd330/week06/"
     } ,
-    {
-        label: "Week 07 Notes" ,
-        url: "wdd330/week07/"
-    } ,
-    {
-        label: "Week 08 Notes" ,
-        url: "wdd330/week08/"
-    } ,
-    {
-        label: "Week 09 Notes" ,
-        url: "wdd330/week09/"
-    } ,
-    {
-        label: "Week 10 Notes" ,
-        url: "wdd330/week10/"
-    }
-    ,
     {
         label: "Final Project" ,
         url: "wdd330/pokedex/"
