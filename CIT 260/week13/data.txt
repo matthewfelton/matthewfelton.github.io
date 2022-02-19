@@ -1,0 +1,5 @@
+
+Shape      ID  Position  Area
+Circle    156  (1,1)     314.16 sq. inches
+Square    237  (1,3)       4.00 sq. inches
+Triangle  212  (3,3)       6.00 sq. inches
